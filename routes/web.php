@@ -23,7 +23,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', [LoginController::class, 'showLoginForm']);
+Route::get('/', [LoginController::class, 'showLoginForm'])->name('landing');
 Route::post('login', [LoginController::class, 'login'])->name('login');
 
 Route::middleware('auth')->group(function () {

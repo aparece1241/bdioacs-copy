@@ -57,8 +57,8 @@
                                         <h6>Feedbacks</h6>
                                     </div>
                                     <div class="m-b-20">
-                                        <div id="chat-scroll">
-                                            <ul class="chat-list list-unstyled m-b-0">
+                                        <div id="chat-scroll" >
+                                            <ul class="chat-list list-unstyled m-b-0" >
                                                 @foreach ($doctor->feedbacks as $feedback)
                                                     <li>
                                                         <div class="clearfix active">
