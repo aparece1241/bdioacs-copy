@@ -29,7 +29,8 @@ class MeetingRequest extends FormRequest
             'patient_id' => 'required|exists:patients,id',
             'subject' => 'required',
             'room' => 'required|unique:meetings,room',
-            'password' => 'required'
+            'password' => 'required',
+            'schedule' => 'required|date'
         ];
     }
 }
