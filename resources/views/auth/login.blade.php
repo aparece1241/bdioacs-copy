@@ -70,31 +70,11 @@
                             </button>
                         </form>
                     </div>
-                    {{-- <div class="text-center">
-                        <!-- Social register -->
-                        <p>or sign in with:</p>
-
-                        <a type="button" class="btn-floating btn-fb btn-sm">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="http://dits-corp-dev.herokuapp.com/accounts/auth/google"
-                            class="btn-floating btn-tw btn-sm">
-                            <i class="fab fa-google"></i>
-                        </a>
-                        <a href="http://dits-corp-dev.herokuapp.com/accounts/auth/linkedin"
-                            class="btn-floating btn-li btn-sm">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="http://dits-corp-dev.herokuapp.com/accounts/auth/github"
-                            class="btn-floating btn-git btn-sm">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div> --}}
                     <div
                         class="card-footer d-flex justify-content-between align-items-baseline px-0 bg-transparent pt-4">
                         <a href="{{ route('register') }}" class="btn btn-sm rounded btn-primary m-0">Create
                             Account</a>
-                        <a href="http://dits-corp-dev.herokuapp.com/accounts/password/reset">Forgot Password</a>
+                        <a href="{{ route('password.request') }}">Forgot Password</a>
                     </div>
                 </div>
 

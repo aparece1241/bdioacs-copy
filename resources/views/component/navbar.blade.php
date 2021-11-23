@@ -13,28 +13,31 @@
         </ul>
     </div>
     <ul class="navbar-nav navbar-right">
-        <li class="dropdown"><a href="#" data-toggle="dropdown"
-                class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image"
-                    src="{{ Auth::user()->profile ?? asset('images/user-profile.png') }}"
-                    class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
-            <div class="dropdown-menu dropdown-menu-right pullDown">
-                <div class="dropdown-title">{{ Auth::user()->name }}</div>
-                <a href="{{ route('users.profile', Auth::user()) }}" class="dropdown-item has-icon"> <i
-                        class="far
+        @auth
+            <li class="dropdown"><a href="#" data-toggle="dropdown"
+                    class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image"
+                        src="{{ Auth::user()->profile ?? asset('images/user-profile.png') }}"
+                        class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+                <div class="dropdown-menu dropdown-menu-right pullDown">
+                    <div class="dropdown-title">{{ Auth::user()->name }}</div>
+                    <a href="{{ route('users.profile', Auth::user()) }}" class="dropdown-item has-icon"> <i
+                            class="far
 										fa-user"></i>
-                    Profile
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="/login" class="dropdown-item has-icon text-danger"
-                    onclick="event.preventDefault(); document.getElementById('logout').submit()"> <i
-                        class="fas fa-sign-out-alt"></i>
-                    Logout
-                </a>
-                <form action="{{ route('logout') }}" method="POST" id="logout">
-                    @csrf
-                </form>
-            </div>
-        </li>
+                        Profile
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/login" class="dropdown-item has-icon text-danger"
+                        onclick="event.preventDefault(); document.getElementById('logout').submit()"> <i
+                            class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                    <form action="{{ route('logout') }}" method="POST" id="logout">
+                        @csrf
+                    </form>
+                </div>
+            </li>
+        @endauth
+
     </ul>
 </nav>
 <div class="main-sidebar sidebar-style-2">

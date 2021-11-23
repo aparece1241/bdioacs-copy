@@ -26,7 +26,7 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [LoginController::class, 'showLoginForm'])->name('landing');
 Route::post('login', [LoginController::class, 'login'])->name('login');
 
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', [AppController::class, 'index'])->name('dashboard');
     Route::put('users/{user}', [UserController::class, 'update'])->name('users.update');
     Route::put('users/{user}/password', [UserController::class, 'updatePassword'])->name('users.update-password');
@@ -52,5 +52,6 @@ Route::middleware('auth')->group(function () {
 
 Auth::routes([
     'login'    => false,
+    'verify' => true
 ]);
 
