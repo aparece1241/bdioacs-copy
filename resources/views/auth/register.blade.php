@@ -22,7 +22,7 @@
         <div class="mask rgba-black-strong">
             <div class="container h-100  d-flex justify-content-center  align-items-center" style="min-height:100vh;">
 
-                <div class="card px-5 pt-5 pb-3" style="min-width: 360px;width:450px">
+                <div class="card mt-5 px-5 pt-5 pb-3" style="min-width: 360px;width:450px">
                     <div class="card-header bg-transparent text-center h4 pb-3 "> <b>Create your Account</b> </div>
 
                     <div class="card-body px-0 pt-4">
