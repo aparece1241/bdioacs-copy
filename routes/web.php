@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\DiseaseController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\FeedbackController;
@@ -9,6 +10,7 @@ use App\Http\Controllers\MeetingController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\UserController;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -48,9 +50,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('meetings/{meeting}', [MeetingController::class, 'show'])->name('meetings.show');
 });
 
-
+Route::get('/email/verify/{id}/{hash}', [VerificationController::class, 'verify'])->name('verification.verify');
+Route::get('email/verify', [VerificationController::class, 'show'])->name('verification.notice');
+Route::post('/email/verification-notification', [VerificationController::class, 'resend'])->name('verification.resend');
 
 Auth::routes([
     'login'    => false,
-    'verify' => true
+    'verify' => false
 ]);
