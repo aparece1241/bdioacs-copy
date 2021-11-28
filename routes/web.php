@@ -54,4 +54,3 @@ Auth::routes([
     'login'    => false,
     'verify' => true
 ]);
-
