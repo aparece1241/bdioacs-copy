@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrums')
-    <li class="breadcrumb-item active" aria-current="page">Doctors</li>
+    <li class="breadcrumb-item active" aria-current="page">Doctors HAHA</li>
 @endsection
 @section('bread_crum_action')
     @role('Admin')
@@ -13,7 +13,7 @@
         <div class="section-body">
             <div class="row col-12">
                 @foreach ($doctors as $doctor)
-                    <div class="col-4">
+                    <div class="col col-lg-4 col-md-4 col-sm-12  col-xs-12">
                         <div class="card author-box">
                             <div class="card-body">
                                 <div class="author-box-center">
