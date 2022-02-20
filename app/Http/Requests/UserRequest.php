@@ -25,7 +25,7 @@ class UserRequest extends FormRequest
      */
     public function rules()
     {
-        $model = $this->patient?->user ??  $this->doctor?->user ?? $this->user;
+        $model = $this->patient?->user ?? $this->secretary?->user ?? $this->doctor?->user ?? $this->user;
 
         return [
             'name' => 'required|string|max:255',

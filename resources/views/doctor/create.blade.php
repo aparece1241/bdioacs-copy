@@ -33,7 +33,7 @@
                             </div>
                             <input id="contact_number" type="text"
                                 class="form-control  @error('contact_number') is-invalid @enderror" name="contact_number"
-                                placeholder="ex: John Doe" required autocomplete="contact_number" autofocus
+                                placeholder="ex: 09xxxxxxxxx" required autocomplete="contact_number" autofocus
                                 value="{{ old('contact_number') }}">
                             @error('contact_number')
                                 <span class="invalid-feedback" role="alert">

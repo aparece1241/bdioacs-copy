@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\UserRequest;
 use App\Models\Doctor;
 use App\Models\Schedule;
+use App\Models\Secretary;
 use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Http\Request;
@@ -78,7 +79,11 @@ class DoctorController extends Controller
      */
     public function edit(Doctor $doctor)
     {
-        return view('doctor.edit', compact('doctor'));
+        $secretaries = Secretary::whereNull('doctor_id')->get();
+        if ($doctor->secretary) {
+            $secretaries->push($doctor->secretary);
+        }
+        return view('doctor.edit', compact('doctor', 'secretaries'));
     }
 
     /**
@@ -91,6 +96,10 @@ class DoctorController extends Controller
     public function update(UserRequest $request, Doctor $doctor)
     {
         $this->userService->update($request->validated(), $doctor->user);
+        
+        if ($request->secretary) {
+            Secretary::find($request->secretary)->update(['doctor_id' => $doctor->id]);
+        }
 
         $doctor->update([
             'specialized' => $request->specialized

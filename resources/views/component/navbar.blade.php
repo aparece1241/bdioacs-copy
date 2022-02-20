@@ -61,7 +61,7 @@
             </li>
             @role('Admin')
                 <li class="dropdown @if (Route::is('secretaries.*')) active @endif">
-                    <a href="{{ route('patients.index') }}" class="nav-link"><i
+                    <a href="{{ route('secretaries.index') }}" class="nav-link"><i
                             data-feather="users"></i><span>Secretaries</span></a>
                 </li>
             @endrole

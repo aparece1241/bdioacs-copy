@@ -16,11 +16,10 @@ class CreateSecretariesTable extends Migration
         Schema::create('secretaries', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('doctor_id');
+            $table->unsignedBigInteger('doctor_id')->nullable();
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *

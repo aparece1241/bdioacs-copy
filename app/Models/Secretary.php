@@ -9,6 +9,11 @@ class Secretary extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'doctor_id'
+    ];
+
     public function user()
     {
         return $this->belongsTo(User::class);

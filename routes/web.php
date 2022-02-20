@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\VerificationController;
 use App\Http\Controllers\DiseaseController;
 use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\SecretaryController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\MeetingController;
 use App\Http\Controllers\PatientController;
@@ -35,6 +36,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('patients', PatientController::class);
     Route::get('patients/{patient}/schedules', [ScheduleController::class, 'patient'])->name('patients.schedules.index');
     Route::resource('doctors', DoctorController::class);
+    Route::resource('secretaries', SecretaryController::class);
     Route::resource('schedules', ScheduleController::class);
     Route::get('doctors/{doctor}/schedules', [ScheduleController::class, 'create'])->name('doctors.schedules.create');
     Route::post('doctors/{doctor}/schedules', [ScheduleController::class, 'store'])->name('doctors.schedules.store');

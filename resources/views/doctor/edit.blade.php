@@ -94,6 +94,22 @@
                         </div>
                     </div>
 
+                    <div class="form-group">
+                        <label for="secretary">Secretary</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            </div>
+                            <select id="secretary" type="secretary" class="form-control"
+                                name="secretary" autocomplete="secretary" autofocus>
+                                <option value="">Choose Secretary</option>
+                                @foreach($secretaries as $secretary)
+                                <option value="{{ $secretary->id }}">{{ $secretary->user->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    
                     <button type="submit" class="btn btn-outline-primary darken-3 rounded  btn-block mt-4">
                         Update
                     </button>
