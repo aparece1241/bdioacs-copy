@@ -23,9 +23,17 @@ class DoctorController extends Controller
      */
     public function index()
     {
+        
         $doctors = Doctor::with('user')->get();
+        $specialized = "";
 
-        return view('doctor.index', compact('doctors'));
+        //new
+        $selectDropdown = Doctor::distinct()->select('specialized')->get();
+        if (request()->specialized) {
+            $doctors = Doctor::where('specialized',request()->specialized)->get();
+            $specialized = request()->specialized;
+        }
+        return view('doctor.index', compact('doctors', 'selectDropdown', 'specialized'));
     }
 
     /**
@@ -108,7 +116,7 @@ class DoctorController extends Controller
     public function destroy(Doctor $doctor)
     {
         $doctor->delete();
-
+ 
         return back();
     }
 }
