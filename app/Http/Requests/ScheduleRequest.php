@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+use App\Models\Schedule;
 
 class ScheduleRequest extends FormRequest
 {
@@ -32,7 +34,11 @@ class ScheduleRequest extends FormRequest
             'address' => 'required|string',
             'schedule_date' => 'required|date|after_or_equal:' . date('m/d/Y'),
             'schedule_time' => 'required',
-            'reason' => 'required|string'
+            'reason' => 'required|string',
+            'temperature' => 'sometimes|required|float',
+            'weight' => 'sometimes|required|float',
+            'height' => 'sometimes|required|float',
+            'type' => Rule::in([Schedule::ONLINE, Schedule::PHYSICAL])
         ];
     }
 }

@@ -26,6 +26,10 @@ class CreateSchedulesTable extends Migration
             $table->date('schedule_date');
             $table->time('schedule_time');
             $table->text('reason');
+            $table->enum('type', ['online', 'physical'])->default('online');
+            $table->float('temperature');
+            $table->float('height');
+            $table->float('weight');
             $table->string('status')->default(Schedule::PENDING);
             $table->timestamps();
         });

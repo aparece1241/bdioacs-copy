@@ -118,7 +118,6 @@
                                     @enderror
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label for="schedule_time">Schedule Time</label>
                                 <div class="input-group">
@@ -137,12 +136,78 @@
                                     @enderror
                                 </div>
                             </div>
+                            @if($is_physical)
+                                <div class="form-group">
+                                    <label for="temperature">Temperature</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-thermometer-empty"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                        <input id="temperature" type="number" step=".01"
+                                            class="form-control  @error('temperature') is-invalid @enderror"
+                                            name="temperature" required autocomplete="temperature" autofocus
+                                            value="{{ old('temperature') }}">
+                                        @error('temperature')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="height">Height</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-male"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                        <input id="height" type="number" step=".01"
+                                            class="form-control  @error('height') is-invalid @enderror"
+                                            name="height" required autocomplete="height" autofocus
+                                            value="{{ old('height') }}">
+                                        @error('height')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="weight">Weight</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-balance-scale"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                        <input id="weight" type="number" step=".01"
+                                            class="form-control  @error('weight') is-invalid @enderror"
+                                            name="weight" required autocomplete="weight" autofocus
+                                            value="{{ old('weight') }}">
+                                        @error('weight')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+                            @endif
+                            
+                            <input type="hidden" name="type" value="{{ $is_physical ? 'physical' : 'online' }}">
+
                             <div class="form-group">
                                 <label for="reason">Reason of Appointment (please specified) </label>
 
-                                <textarea id="reason" type="time"
+                                <select name="" id="" class="form-control @error('reason') is-invalid @enderror" autocomplete="reason">
+                                        <option value="">Please select a reason</option>        
+                                        <option value="Daily check-up">Daily Check-up</option>        
+                                        <option value="Desease">Desease</option>
+                                </select>
+
+                                <!-- <textarea id="reason" type="time"
                                     class="form-control  @error('reason') is-invalid @enderror" name="reason" required
-                                    autocomplete="reason" autofocus>{{ old('reason') }}</textarea>
+                                    autocomplete="reason" autofocus>{{ old('reason') }}</textarea> -->
+                                
                                 @error('reason')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

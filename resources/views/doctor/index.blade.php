@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('breadcrums')
-    <li class="breadcrumb-item active" aria-current="page">Doctors HAHA</li>
+    <li class="breadcrumb-item active" aria-current="page">Doctors</li>
 @endsection
 @section('bread_crum_action')
     @role('Admin')
@@ -29,7 +29,6 @@
                                 <div class="author-box-description text-center">
                                     <p>Contact # : {{ $doctor->user->contact_number }} </p>
                                     <p>Email: {{ $doctor->user->email }}</p>
-
                                 </div>
                                 @role('Admin')
                                     <div class="mb-2 mt-3">

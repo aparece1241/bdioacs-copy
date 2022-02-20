@@ -17,8 +17,8 @@
                         <p class="mb-0"><strong>Specialized In:</strong> {{ $doctor->specialized }}</p>
                         <p class="mt-0"><strong>Address:</strong> {{ $doctor->user->address }}</p>
                         @role('Patient')
-                            <a href="{{ route('doctors.schedules.create', $doctor) }}" class="btn btn-primary">Create
-                                Schedule</a>
+                            <a href="{{ route('doctors.schedules.create', $doctor) }}?is-physical=0" class="btn btn-primary">Online Schedule</a>
+                            <a href="{{ route('doctors.schedules.create', $doctor) }}?is-physical=1" class="btn btn-primary">Physical Schedule</a>
                         @endrole
                     </div>
 

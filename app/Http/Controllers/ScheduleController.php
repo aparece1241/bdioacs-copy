@@ -54,7 +54,8 @@ class ScheduleController extends Controller
      */
     public function create(Doctor $doctor)
     {
-        return view('schedule.create', compact('doctor'));
+        $is_physical = request()->all()['is-physical'];
+        return view('schedule.create', compact('doctor', 'is_physical'));
     }
 
     /**

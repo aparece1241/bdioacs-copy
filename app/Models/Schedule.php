@@ -13,6 +13,10 @@ class Schedule extends Model
     const ACCEPTED = 'accepted';
     const DECLINED = 'declined';
 
+    // schedule types
+    const ONLINE = 'online';
+    const PHYSICAL = 'physical';
+
     protected $fillable = [
         'patient_id',
         'name',
