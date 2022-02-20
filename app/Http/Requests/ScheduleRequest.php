@@ -35,9 +35,9 @@ class ScheduleRequest extends FormRequest
             'schedule_date' => 'required|date|after_or_equal:' . date('m/d/Y'),
             'schedule_time' => 'required',
             'reason' => 'required|string',
-            'temperature' => 'sometimes|required|float',
-            'weight' => 'sometimes|required|float',
-            'height' => 'sometimes|required|float',
+            'temperature' => 'sometimes|required|numeric',
+            'weight' => 'sometimes|required|numeric',
+            'height' => 'sometimes|required|numeric',
             'type' => Rule::in([Schedule::ONLINE, Schedule::PHYSICAL])
         ];
     }

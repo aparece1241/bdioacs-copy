@@ -237,6 +237,7 @@
                                             @else
                                                 <th>Patient</th>
                                             @endrole
+                                            <th>Type</th>
                                             <th>Date</th>
                                             <th>Time</th>
                                             <th>Status</th>
@@ -254,6 +255,7 @@
                                                 @else
                                                     <td> {{ $schedule->patient->user->name }} </td>
                                                 @endrole
+                                                <td> {{ ucfirst($schedule->type) }} </td>
                                                 <td> {{ $schedule->schedule_date->format('d D M, Y') }} </td>
                                                 <td> {{ $schedule->schedule_time->format('h:m A') }}</td>
                                                 <td>

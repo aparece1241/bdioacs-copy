@@ -59,6 +59,12 @@
                 <a href="{{ route('doctors.index') }}" class="nav-link"><i
                         data-feather="users"></i><span>Doctors</span></a>
             </li>
+            @role('Admin')
+                <li class="dropdown @if (Route::is('secretaries.*')) active @endif">
+                    <a href="{{ route('patients.index') }}" class="nav-link"><i
+                            data-feather="users"></i><span>Secretaries</span></a>
+                </li>
+            @endrole
             <li class="dropdown @if (Route::is('diseases.*')) active @endif">
                 <a href="{{ route('diseases.index') }}" class="nav-link">
                     <i data-feather="cpu"></i><span>Diseases</span>

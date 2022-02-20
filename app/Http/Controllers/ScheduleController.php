@@ -67,7 +67,6 @@ class ScheduleController extends Controller
     public function store(ScheduleRequest $request, Doctor $doctor)
     {
         $doctor->schedules()->create($request->validated());
-
         return redirect()->route('users.profile', Auth::user());
     }
 

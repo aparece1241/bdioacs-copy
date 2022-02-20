@@ -138,7 +138,7 @@
                             </div>
                             @if($is_physical)
                                 <div class="form-group">
-                                    <label for="temperature">Temperature</label>
+                                    <label for="temperature">Temperature(&#8451;)</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-thermometer-empty"
@@ -156,7 +156,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="height">Height</label>
+                                    <label for="height">Height(cm)</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-male"
@@ -174,7 +174,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="weight">Weight</label>
+                                    <label for="weight">Weight(kg)</label>
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-balance-scale"
@@ -198,7 +198,7 @@
                             <div class="form-group">
                                 <label for="reason">Reason of Appointment (please specified) </label>
 
-                                <select name="" id="" class="form-control @error('reason') is-invalid @enderror" autocomplete="reason">
+                                <select name="reason" id="" class="form-control @error('reason') is-invalid @enderror" autocomplete="reason">
                                         <option value="">Please select a reason</option>        
                                         <option value="Daily check-up">Daily Check-up</option>        
                                         <option value="Desease">Desease</option>

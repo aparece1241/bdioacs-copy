@@ -20,8 +20,9 @@ class User extends Authenticatable implements MustVerifyEmail
     const ADMIN = 'Admin';
     const DOCTOR = 'Doctor';
     const PATIENT = 'Patient';
+    const SECRETARY = 'Secretary';
 
-    const ROLES = [self::ADMIN, self::DOCTOR, self::PATIENT];
+    const ROLES = [self::ADMIN, self::DOCTOR, self::PATIENT, self::SECRETARY];
 
     /**
      * The attributes that are mass assignable.

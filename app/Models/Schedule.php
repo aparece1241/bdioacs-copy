@@ -27,7 +27,11 @@ class Schedule extends Model
         'schedule_date',
         'schedule_time',
         'reason',
-        'status'
+        'status',
+        'type',
+        'temperature',
+        'height',
+        'weight'
     ];
 
     protected $casts = [
