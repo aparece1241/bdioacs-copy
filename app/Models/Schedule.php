@@ -12,6 +12,8 @@ class Schedule extends Model
     const PENDING = 'pending';
     const ACCEPTED = 'accepted';
     const DECLINED = 'declined';
+    const APPROVED = 'approved';
+    const PAID = 'paid';
 
     // schedule types
     const ONLINE = 'online';

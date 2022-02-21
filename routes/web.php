@@ -40,6 +40,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('schedules', ScheduleController::class);
     Route::get('doctors/{doctor}/schedules', [ScheduleController::class, 'create'])->name('doctors.schedules.create');
     Route::post('doctors/{doctor}/schedules', [ScheduleController::class, 'store'])->name('doctors.schedules.store');
+    Route::get('doctors/upload/prescription', [DoctorController::class, 'prescription'])->name('doctors.schedule.prescription');
     Route::put('schedules/{schedule}/accept', [ScheduleController::class, 'accept'])->name('schedules.accept');
     Route::put('schedules/{schedule}/decline', [ScheduleController::class, 'decline'])->name('schedules.decline');
     Route::resource('doctors.feedback', FeedbackController::class)->shallow();

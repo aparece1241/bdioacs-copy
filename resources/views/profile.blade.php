@@ -243,6 +243,8 @@
                                             <th>Status</th>
                                             @role('Doctor')
                                                 <th>Actions</th>
+                                            @elseif('Secretary')
+                                                <th>Actions</th>
                                             @endrole
                                         </tr>
                                     </thead>
@@ -265,10 +267,20 @@
                                                     </div>
                                                 </td>
                                                 @role('Doctor')
+                                                <td class="d-flex align-items-center">
+                                                    <form action="#">
+                                                        <a href="{{ route('schedules.show', $schedule) }}"
+                                                        class="btn btn-sm btn-primary mr-2">Detail</a>
+                                                    </form>
+                                                    <form action="#">
+                                                        <a href="{{ route('doctors.schedule.prescription', $schedule) }}"
+                                                        class="btn btn-sm btn-warning mr-2">Upload Precription</a>
+                                                    </form>
+                                                    @elseif('Secretary')
                                                     <td class="d-flex align-items-center">
                                                         <form action="#">
                                                             <a href="{{ route('schedules.show', $schedule) }}"
-                                                                class="btn btn-sm btn-primary mr-2">Detail</a>
+                                                            class="btn btn-sm btn-primary mr-2">Detail</a>
                                                         </form>
                                                         @if ($schedule->status === \App\Models\Schedule::PENDING)
                                                             <form action="{{ route('schedules.accept', $schedule) }}"
@@ -309,8 +321,14 @@
                                                     {{ $meeting->schedule->format('d D M, Y h:m A') }}</p>
                                                 <p><strong>Room:</strong> {{ $meeting->room }}</p>
                                                 <p><strong>Password:</strong> {{ $meeting->password }}</p>
+                                                @role('Doctor')
                                                 <a href="{{ route('meetings.show', $meeting) }}"
                                                     class="btn btn-primary btn-block">Join</a>
+                                                @endrole
+                                                @role('Patient')
+                                                    <a href="{{ route('meetings.show', $meeting) }}"
+                                                        class="btn btn-primary btn-block">Join</a>
+                                                @endrole
                                             </div>
                                         </div>
                                     </div>

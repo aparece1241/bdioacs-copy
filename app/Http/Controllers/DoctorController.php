@@ -96,7 +96,7 @@ class DoctorController extends Controller
     public function update(UserRequest $request, Doctor $doctor)
     {
         $this->userService->update($request->validated(), $doctor->user);
-        
+
         if ($request->secretary) {
             Secretary::find($request->secretary)->update(['doctor_id' => $doctor->id]);
         }
@@ -119,5 +119,10 @@ class DoctorController extends Controller
         $doctor->delete();
 
         return back();
+    }
+
+    public function prescription()
+    {
+        return view('upload-prescription');
     }
 }

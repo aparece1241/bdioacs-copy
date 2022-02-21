@@ -74,9 +74,9 @@ class SecretaryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Secretary $secretary)
     {
-        //
+        return view('secretary.edit', compact('secretary'));
     }
 
     /**
@@ -86,9 +86,10 @@ class SecretaryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UserRequest $request, Secretary $secretary)
     {
-        //
+        $this->userService->update($request->validated(), $secretary->user);
+        return redirect()->route('secretaries.index');
     }
 
     /**

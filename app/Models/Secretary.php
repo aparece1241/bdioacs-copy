@@ -21,6 +21,6 @@ class Secretary extends Model
 
     public function doctor()
     {
-        return $this->hasOne(Doctor::class);
+        return $this->belongsTo(Doctor::class);
     }
 }

@@ -16,20 +16,39 @@ class UserController extends Controller
     }
     public function profile(User $user)
     {
-        $schedules = $user->type == User::DOCTOR
-            ? $user->doctor?->schedules
-            : $user->patient?->schedules;
+        // $schedules = $user->type == User::DOCTOR
+        //     ? $user->doctor?->schedules
+        //     : $user->patient?->schedules;
 
-        if (!$schedules) {
-            $schedules = [];
+        // if (!$schedules) {
+        //     $schedules = [];
+        // }
+
+        // $meetings = $user->type == User::DOCTOR
+        //     ? $user->doctor?->meetings
+        //     : $user->patient?->meetings;
+        // if (!$meetings) {
+        //     $meetings = [];
+        // }
+        $meetings = [];
+        $schedules = [];
+
+        switch ($user->type) {
+            case User::PATIENT:
+                $schedules = $user->patient?->schedules;
+                $meetings = $user->patient?->meetings;
+                break;
+            case User::DOCTOR:
+                $schedules = $user->doctor?->schedules;
+                $meetings = $user->doctor?->meetings;
+                break;
+            case User::SECRETARY:
+                $schedules = $user->secretary?->doctor?->schedules;
+                $meetings = $user->secretary?->doctor?->meetings;
         }
 
-        $meetings = $user->type == User::DOCTOR
-            ? $user->doctor?->meetings
-            : $user->patient?->meetings;
-        if (!$meetings) {
-            $meetings = [];
-        }
+        $meetings = !$meetings ? [] : $meetings;
+        $schedules = !$schedules ? [] : $schedules;
 
         return view('profile', compact('user', 'schedules', 'meetings'));
     }

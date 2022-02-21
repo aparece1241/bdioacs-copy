@@ -27,6 +27,7 @@ class CreateSchedulesTable extends Migration
             $table->time('schedule_time');
             $table->text('reason');
             $table->enum('type', ['online', 'physical'])->default('online');
+            $table->json('images')->nullable();
             $table->float('temperature')->nullable();
             $table->float('height')->nullable();
             $table->float('weight')->nullable();
