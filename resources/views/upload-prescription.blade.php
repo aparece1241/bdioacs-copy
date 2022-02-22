@@ -9,7 +9,7 @@
     <section class="section">
         <div class="section-body">
             <div class="tab-pane fade show active pt-5" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <form action="">
+                <form method="post" action="">
                     <div class="form-group p-2 ">
                         <label for="Preview">Preview</label>
                         <div class="row mw-75 border" id="image-cont">
@@ -21,11 +21,11 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-upload" aria-hidden="true"></i></span>
                             </div>
-                            <input type="file" class="form-control" id="prescription" name="" accept="image/*"
+                            <input type="file" class="form-control" id="prescription" name="images[]" accept="image/*"
                                 value="{{ old('profile') }}" id="prescription" multiple>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-outline-primary darken-3 rounded  btn-block mt-4">
+                    <button type="button" id="submit" class="btn btn-outline-primary darken-3 rounded  btn-block mt-4">
                         Submit
                     </button>
                 </form>
@@ -35,10 +35,13 @@
     <script>
         window.onload = () => {
             let fileInput = document.getElementById('prescription')
+            let submitBtn = document.getElementById('submit')
             let imageCont = document.getElementById('image-cont')
             imageCont.style = "max-height: 400px;overflow-y: auto;"
             fileInput.addEventListener('change', preview)
+            submitBtn.addEventListener('click', submit)
             let image = document.getElementById('image')
+            let formData = new FormData();
 
             function preview() {
                 let files = this.files;
@@ -50,7 +53,7 @@
             function extracFile(file) {
                 let fileReader = new FileReader();
                 fileReader.addEventListener('load', () => {
-                    console.log(fileReader.result)
+                    formData.append('images[]', fileReader.result)
                     createElement(fileReader.result)
                 })
                 fileReader.readAsDataURL(file)
@@ -65,6 +68,13 @@
                 div.classList.add('mb-4')
                 div.appendChild(img)
                 imageCont.appendChild(div)
+            }
+
+            function submit() {
+                fetch(`${location.origin}/api/doctors/${{!! $schedule->id !!}}/upload/prescription`, {
+                    method: "POST",
+                    body: formData,
+                }).then(response => response.text()).then(data => alert('send')).catch(e => console.log(e))
             }
         }
     </script>

@@ -114,4 +114,20 @@ class ScheduleController extends Controller
     {
         //
     }
+
+    /**
+     * Get upload prescription view
+     */
+    public function prescription(Schedule $schedule)
+    {
+        return view('upload-prescription', compact('schedule'));
+    }
+
+    /**
+     * Save images after upload
+     */
+    public function uploadPrescription(Request $request, Schedule $schedule)
+    {
+        dd($request->images);
+    }
 }

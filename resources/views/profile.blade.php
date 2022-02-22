@@ -243,7 +243,11 @@
                                             <th>Status</th>
                                             @role('Doctor')
                                                 <th>Actions</th>
-                                            @elseif('Secretary')
+                                            @endrole
+                                            @role('Secretary')
+                                                <th>Actions</th>
+                                            @endrole
+                                            @role('Patient')
                                                 <th>Actions</th>
                                             @endrole
                                         </tr>
@@ -276,7 +280,8 @@
                                                         <a href="{{ route('doctors.schedule.prescription', $schedule) }}"
                                                         class="btn btn-sm btn-warning mr-2">Upload Precription</a>
                                                     </form>
-                                                    @elseif('Secretary')
+                                                @endrole
+                                                @role('Secretary')
                                                     <td class="d-flex align-items-center">
                                                         <form action="#">
                                                             <a href="{{ route('schedules.show', $schedule) }}"
@@ -298,6 +303,13 @@
                                                                     class="btn btn-sm btn-danger">Decline</button>
                                                             </form>
                                                         @endif
+                                                    </td>
+                                                @endrole
+                                                @role('Patient')
+                                                    <td class="d-flex align-items-center">
+                                                        <form action="#">
+                                                            <button class="btn btn-sm btn-warning mr-2" disabled>View Precription</button>
+                                                        </form>
                                                     </td>
                                                 @endrole
                                             </tr>

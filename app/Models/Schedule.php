@@ -38,7 +38,8 @@ class Schedule extends Model
 
     protected $casts = [
         'schedule_date' => 'date',
-        'schedule_time' => 'datetime'
+        'schedule_time' => 'datetime',
+        'images' => 'array',
     ];
 
     public function doctor()

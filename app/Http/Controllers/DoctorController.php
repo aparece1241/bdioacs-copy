@@ -8,6 +8,7 @@ use App\Models\Schedule;
 use App\Models\Secretary;
 use App\Models\User;
 use App\Services\UserService;
+use App\Services\FilesService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
 
@@ -119,10 +120,5 @@ class DoctorController extends Controller
         $doctor->delete();
 
         return back();
-    }
-
-    public function prescription()
-    {
-        return view('upload-prescription');
     }
 }
