@@ -34,14 +34,26 @@
     </section>
     <script>
         window.onload = () => {
+            // initialization
             let fileInput = document.getElementById('prescription')
             let submitBtn = document.getElementById('submit')
             let imageCont = document.getElementById('image-cont')
             imageCont.style = "max-height: 400px;overflow-y: auto;"
+
+             // get schedule
+             let schedule = {!! $schedule !!}
+            if (schedule.images) {
+                for (let image of schedule.images) {
+                    console.log(image)
+                    createElement(image)
+                }
+            }
+
             fileInput.addEventListener('change', preview)
             submitBtn.addEventListener('click', submit)
             let image = document.getElementById('image')
             let formData = new FormData();
+
 
             function preview() {
                 let files = this.files;
@@ -63,7 +75,7 @@
                 let div = document.createElement('div');
                 let img = document.createElement('img');
                 img.src = source
-                img.style = "width: 100%; height: 190px;"
+                img.style = "width: 100%; height: 300px;"
                 div.classList.add('col-md-4')
                 div.classList.add('mb-4')
                 div.appendChild(img)
@@ -71,6 +83,12 @@
             }
 
             function submit() {
+                if (!fileInput.files.length)
+                {
+                    location.href = `${location.origin}/users/${{!! Auth::user()->id !!}}/profile`
+                    return;
+                }
+
                 fetch(`${location.origin}/api/doctors/${{!! $schedule->id !!}}/upload/prescription`, {
                     method: "POST",
                     body: formData,

@@ -44,7 +44,7 @@ class ScheduleController extends Controller
             'status' => Schedule::ACCEPTED
         ]);
 
-        return back()->with('sucesss', 'Schedule accepted!');
+        return redirect()->route('schedules.show', $schedule);
     }
 
     public function decline(Schedule $schedule)
@@ -108,9 +108,10 @@ class ScheduleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Schedule $schedule)
     {
-        //
+        $schedule->update($request->all());
+        return redirect()->route('users.profile', Auth::user());
     }
 
     /**

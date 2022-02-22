@@ -72,32 +72,51 @@
                                 value="{{ $schedule->address }}">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="schedule_date">Schedule Date</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                    <form method="post" action="{{ route('schedules.update', $schedule) }}">
+                        @method('PUT')
+                        @csrf
+                        <div class="form-group">
+                            <label for="schedule_date">Schedule Date</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                </div>
+                                @if($schedule->status == \App\Models\Schedule::ACCEPTED)
+                                <input id="schedule_date" type="date" name="schedule_date" class="form-control"
+                                    value="{{ $schedule->schedule_date->format('Y-m-d') }}">
+                                @else
+                                <input id="schedule_date" type="date" class="form-control" readonly
+                                    value="{{ $schedule->schedule_date->format('Y-m-d') }}">
+                                @endif
                             </div>
-                            <input id="schedule_date" type="date" class="form-control" readonly
-                                value="{{ $schedule->schedule_date->format('Y-m-d') }}">
                         </div>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="schedule_time">Schedule Time</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fa fa-clock" aria-hidden="true"></i></span>
+                        <div class="form-group">
+                            <label for="schedule_time">Schedule Time</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa fa-clock" aria-hidden="true"></i></span>
+                                </div>
+                                @if($schedule->status == \App\Models\Schedule::ACCEPTED)
+                                <input id="schedule_time" type="time" name="schedule_time" class="form-control"
+                                    value="{{ $schedule->schedule_time->format('h:m') }}">
+                                @else
+                                <input id="schedule_time" type="time" class="form-control" readonly
+                                    value="{{ $schedule->schedule_time->format('h:m') }}">
+                                @endif
                             </div>
-                            <input id="schedule_time" type="time" class="form-control" readonly
-                                value="{{ $schedule->schedule_time->format('h:m') }}">
                         </div>
-                    </div>
                     <div class="form-group">
                         <label for="reason">Reason of Appointment</label>
                         <textarea id="reason" type="time" class="form-control"
                             readonly>{{ $schedule->reason }}</textarea>
                     </div>
+                    @if($schedule->status == \App\Models\Schedule::ACCEPTED)
+                        <button type="submit" class="btn btn-outline-primary darken-3 rounded  btn-block mt-4">
+                            Change
+                        </button>
+                    @endif
+                    </form>
                 </div>
             </div>
         </div>
