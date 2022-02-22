@@ -29,6 +29,15 @@ class ScheduleController extends Controller
         return view('schedule.patient', compact('schedules'));
     }
 
+    public function approve(Schedule $schedule)
+    {
+        $schedule->update([
+            'status' => Schedule::APPROVED
+        ]);
+
+        return back()->with('success', 'Schedule approved!');
+    }
+
     public function accept(Schedule $schedule)
     {
         $schedule->update([
@@ -128,6 +137,10 @@ class ScheduleController extends Controller
      */
     public function uploadPrescription(Request $request, Schedule $schedule)
     {
-        dd($request->images);
+        if ($request->images) {
+            $schedule->update(['images' => $request->images]);
+        }
+
+        return response(['message' => 'ok']);
     }
 }

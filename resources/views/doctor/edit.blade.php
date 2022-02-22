@@ -104,7 +104,7 @@
                                 name="secretary" autocomplete="secretary" autofocus>
                                 <option value="">Choose Secretary</option>
                                 @foreach($secretaries as $secretary)
-                                    @if(old('secretary', $doctor->secretary->id))
+                                    @if(old('secretary', $doctor?->secretary?->id))
                                     <option value="{{ $secretary->id }}" selected>{{ $secretary->user->name }}</option>
                                     @else
                                     <option value="{{ $secretary->id }}">{{ $secretary->user->name }}</option>

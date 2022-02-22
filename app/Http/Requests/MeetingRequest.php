@@ -15,7 +15,8 @@ class MeetingRequest extends FormRequest
      */
     public function authorize()
     {
-        return Auth::user()->hasRole(User::DOCTOR);
+
+        return Auth::user()->hasRole(User::DOCTOR) || Auth::user()->hasRole(User::SECRETARY);
     }
 
     /**

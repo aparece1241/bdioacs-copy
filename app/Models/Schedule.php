@@ -33,7 +33,8 @@ class Schedule extends Model
         'type',
         'temperature',
         'height',
-        'weight'
+        'weight',
+        'images',
     ];
 
     protected $casts = [

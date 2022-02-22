@@ -7,6 +7,7 @@
 @section('content')
     <section class="section">
         <div class="section-body">
+
             <div class="card">
                 <div class="card-body">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -181,7 +182,6 @@
                                                 <strong>{{ $message }}</strong>
                                             </span>
                                         @enderror
-
                                     </div>
                                 </div>
                                 <div class="form-group ">
@@ -288,6 +288,13 @@
                                                             class="btn btn-sm btn-primary mr-2">Detail</a>
                                                         </form>
                                                         @if ($schedule->status === \App\Models\Schedule::PENDING)
+                                                            <form action="{{ route('schedules.approve', $schedule) }}"
+                                                                method="post">
+                                                                @csrf
+                                                                @method('PUT')
+                                                                <button type="submit"
+                                                                    class="btn btn-sm btn-info mr-2">Approve</button>
+                                                            </form>
                                                             <form action="{{ route('schedules.accept', $schedule) }}"
                                                                 method="post">
                                                                 @csrf
@@ -307,18 +314,20 @@
                                                 @endrole
                                                 @role('Patient')
                                                     <td class="d-flex align-items-center">
-                                                        <form action="#">
+                                                        <form action="{{ route('patient.prescription', $schedule) }}">
+                                                        @if($schedule->images)
+                                                            <button type="submit" class="btn btn-sm btn-warning mr-2">View Precription</button>
+                                                        @else
                                                             <button class="btn btn-sm btn-warning mr-2" disabled>View Precription</button>
+                                                        @endif
                                                         </form>
                                                     </td>
                                                 @endrole
                                             </tr>
                                         @endforeach
-
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
                         <div class="tab-pane fade" id="meetings" role="tabpanel" aria-labelledby="meetings-tab">
                             <div class="row">
@@ -345,7 +354,6 @@
                                         </div>
                                     </div>
                                 @endforeach
-
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UserRequest;
 use App\Models\Patient;
+use App\Models\Schedule;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 
@@ -63,5 +64,13 @@ class PatientController extends Controller
     public function destroy(Patient $patient)
     {
         //
+    }
+
+    /**
+     * View prescription
+     */
+    public function prescription(Schedule $schedule)
+    {
+        return view('prescription', compact('schedule'));
     }
 }

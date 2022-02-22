@@ -9,11 +9,13 @@ class ScheduleUtil {
     {
         switch($status) {
             case Schedule::PENDING:
-                return 'info';
+                return 'warning';
             case Schedule::ACCEPTED:
                 return 'success';
             case Schedule::DECLINED:
                 return 'danger';
+            case Schedule::APPROVED:
+                return 'info';
         }
     }
 }

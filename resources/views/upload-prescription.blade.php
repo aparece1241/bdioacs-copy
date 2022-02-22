@@ -74,7 +74,18 @@
                 fetch(`${location.origin}/api/doctors/${{!! $schedule->id !!}}/upload/prescription`, {
                     method: "POST",
                     body: formData,
-                }).then(response => response.text()).then(data => alert('send')).catch(e => console.log(e))
+                }).then(response => response.json()).then(data => {
+                    alert('Successfully uploaded!');
+                    setTimeout(() => {
+                        if (data.message) {
+                            location.href = `${location.origin}/users/${{!! Auth::user()->id !!}}/profile`
+                        }
+                    }, 1000);
+                }).catch(e => 
+                    {
+                        alert("Something wen't wrong!");
+                    }
+                )
             }
         }
     </script>
