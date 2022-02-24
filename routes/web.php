@@ -44,6 +44,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::put('schedules/{schedule}/accept', [ScheduleController::class, 'accept'])->name('schedules.accept');
     Route::put('schedules/{schedule}/decline', [ScheduleController::class, 'decline'])->name('schedules.decline');
     Route::put('schedules/{schedule}/approve', [ScheduleController::class, 'approve'])->name('schedules.approve');
+    Route::get('patient/approval/{schedule}', [ScheduleController::class, 'approvePatient'])->name('patients.approval');
     Route::get('schedules/{schedule}/prescription', [PatientController::class, 'prescription'])->name('patient.prescription');
     Route::resource('doctors.feedback', FeedbackController::class)->shallow();
     Route::get('users/{user}/profile', [UserController::class, 'profile'])->name('users.profile');

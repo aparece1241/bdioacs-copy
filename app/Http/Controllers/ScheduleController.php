@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ScheduleRequest;
+use App\Notifications\AcceptScheduleNotification;
 use App\Models\Doctor;
 use App\Models\Patient;
 use App\Models\Schedule;
@@ -40,9 +41,13 @@ class ScheduleController extends Controller
 
     public function accept(Schedule $schedule)
     {
-        $schedule->update([
-            'status' => Schedule::ACCEPTED
-        ]);
+        try {
+            $schedule->update([
+                'status' => Schedule::ACCEPTED
+            ]);
+        } catch (\Exception $e) {
+            return $e->getMessage();
+        }
 
         return redirect()->route('schedules.show', $schedule);
     }
@@ -110,7 +115,12 @@ class ScheduleController extends Controller
      */
     public function update(Request $request, Schedule $schedule)
     {
-        $schedule->update($request->all());
+        try{
+            $schedule->update($request->all());
+            $schedule->patient->user->notify(new AcceptScheduleNotification($schedule));
+        } catch (\Exception $e) {
+            return back()->with('error', 'Something went wrong!');
+        }
         return redirect()->route('users.profile', Auth::user());
     }
 
@@ -143,5 +153,19 @@ class ScheduleController extends Controller
         }
 
         return response(['message' => 'ok']);
+    }
+
+    /**
+     * Approve page
+     */
+    public function approvePatient(Schedule $schedule)
+    {
+        $is_approve = request()->is_approve;
+        if ($schedule->status != Schedule::APPROVED || $schedule->status != Schedule::DECLINED) {
+            $schedule->update([
+                'status' => $is_approve ? Schedule::APPROVED : Schedule::DECLINED
+            ]);
+        }
+        return view('email.approveOrDeclined', compact('is_approve', 'schedule'));
     }
 }

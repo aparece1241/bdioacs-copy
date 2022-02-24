@@ -30,14 +30,20 @@ class DoctorController extends Controller
         $specialized = "";
 
         //new
-        $selectDropdown = Doctor::distinct()->select('specialized')->get();
+        $doctors = Doctor::all();
+        $selectDropdown = $doctors->map(function ($doctor) {
+            $doctor->specialized = strtolower($doctor->specialized); 
+            return $doctor;
+        })->unique();
+
         if (request()->specialized) {
-            $doctors = Doctor::where('specialized',request()->specialized)->get();
+            $doctors = $doctors->filter(function ($doctor) {
+                return strtolower($doctor->specialized) == strtolower(request()->specialized);
+            });
             $specialized = request()->specialized;
         }
         return view('doctor.index', compact('doctors', 'selectDropdown', 'specialized'));
     }
-
     /**
      * Show the form for creating a new resource.
      *

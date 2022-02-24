@@ -20,11 +20,11 @@
                     @foreach ($selectDropdown as $options)
                         @if($options->specialized == $specialized)
                             <option value="{{$options->specialized}}" selected>
-                                {{ $options->specialized }}
+                                {{ ucfirst($options->specialized) }}
                             </option>
                         @else
                             <option value="{{$options->specialized}}">
-                                {{ $options->specialized }}
+                                {{ ucfirst($options->specialized) }}
                             </option>
                         @endif
                     @endforeach
@@ -45,7 +45,7 @@
                                     <div class="author-box-name pt-3">
                                         <a href="{{ route('doctors.show', $doctor) }}">{{ $doctor->user->name }}</a>
                                     </div>
-                                    <div class="author-box-job">{{ $doctor->specialized }}</div>
+                                    <div class="author-box-job">{{ ucfirst($doctor->specialized) }}</div>
                                 </div>
 
                                 <div class="author-box-description text-center">
