@@ -285,8 +285,13 @@
                                                         class="btn btn-sm btn-primary mr-2">Detail</a>
                                                     </form>
                                                     <form action="#">
-                                                        <a href="{{ route('doctors.schedule.prescription', $schedule) }}"
-                                                        class="btn btn-sm btn-warning mr-2">Upload Precription</a>
+                                                        @if($schedule->status == \App\Models\Schedule::APPROVED)
+                                                            <a href="{{ route('doctors.schedule.prescription', $schedule) }}"
+                                                            class="btn btn-sm btn-warning mr-2">Upload Precription</a>
+                                                        @else
+                                                            <button data-toggle="tooltip" data-placement="top" title="Schedule not yet approved!"
+                                                            class="btn btn-sm btn-secondary mr-2">Upload Precription</a>
+                                                        @endif
                                                     </form>
                                                 @endrole
                                                 @role('Secretary')

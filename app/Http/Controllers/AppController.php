@@ -28,7 +28,7 @@ class AppController extends Controller
     public function index()
     {
         $patients = Patient::all()->take(5);
-        $totalSchedules = Schedule::count();
+        $totalSecretary = Secretary::count();
         $totalDiseases =  Disease::count();
         $totalDoctors = Doctor::count();
         return view('dashboard', compact(
