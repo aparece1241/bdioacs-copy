@@ -6,6 +6,7 @@ use App\Models\Disease;
 use App\Models\Doctor;
 use App\Models\Patient;
 use App\Models\Schedule;
+use App\Models\Secretary;
 use Illuminate\Http\Request;
 
 class AppController extends Controller
