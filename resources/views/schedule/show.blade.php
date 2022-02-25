@@ -7,11 +7,11 @@
 @section('bread_crum_action')
 @if ($schedule->type == 'online')
     @role('Doctor')
-    <a class="btn btn-primary" href="{{ route('meetings.create', [(!Auth::user()->doctor?Auth::user()->secretary->doctor:Auth::user()->doctor), $schedule]) }}">Start meeting <i
+    <a class="btn btn-primary" href="{{ route('meetings.create', [(!Auth::user()->doctor?Auth::user()->secretary->doctor:Auth::user()->doctor), $schedule]) }}">Create meeting <i
             data-feather="video"></i></a>
     @endrole
     @role('Secretary')
-    <a class="btn btn-primary" href="{{ route('meetings.create', [(!Auth::user()->doctor?Auth::user()->secretary->doctor:Auth::user()->doctor), $schedule]) }}">Start meeting <i
+    <a class="btn btn-primary" href="{{ route('meetings.create', [(!Auth::user()->doctor?Auth::user()->secretary->doctor:Auth::user()->doctor), $schedule]) }}">Create meeting <i
             data-feather="video"></i></a>
     @endrole
 @endif

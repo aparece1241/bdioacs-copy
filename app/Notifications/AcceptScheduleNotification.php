@@ -5,6 +5,7 @@ namespace App\Notifications;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
+use App\Mail\ScheduleAffirmationMail;
 use Illuminate\Notifications\Notification;
 use App\Models\Schedule;
 use Carbon\Carbon;
@@ -44,12 +45,7 @@ class AcceptScheduleNotification extends Notification
      */
     public function toMail($notifiable)
     {
-        return (new MailMessage)
-                    ->line('Hello Dear User!')
-                    ->line('We have noticed that the schedule you set have a conflict on our side.')
-                    ->line('We would like to change the schedule to '. Carbon::parse($this->schedule->schedule_date)->isoFormat('dddd', 'D', 'yyyy') . " " . Carbon::parse($this->schedule->schedule_time)->format('h:i:m') .' . Would you still agree?')
-                    ->action('Approve', implode([route('patients.approval', $this->schedule->id)."?is_approve=1", " ", route('patients.approval', $this->schedule->id)."?is_approve=0"]))
-                    ->line('Thank you for using our application!');
+        return new ScheduleAffirmationMail($this->schedule);
     }
 
     /**

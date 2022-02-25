@@ -31,9 +31,8 @@ class DoctorController extends Controller
 
         //new
         $doctors = Doctor::all();
-        $selectDropdown = $doctors->map(function ($doctor) {
-            $doctor->specialized = strtolower($doctor->specialized); 
-            return $doctor;
+        $selectDropdown = $doctors->map(function ($doctor) { 
+            return strtolower($doctor->specialized);
         })->unique();
 
         if (request()->specialized) {

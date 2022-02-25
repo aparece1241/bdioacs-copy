@@ -7,6 +7,7 @@ use App\Services\UserService;
 use App\Http\Requests\UserRequest;
 use App\Models\Secretary;
 use App\Models\User;
+use Carbon\Carbon;
 
 class SecretaryController extends Controller
 {
@@ -102,4 +103,37 @@ class SecretaryController extends Controller
     {
         //
     }
+
+    /**
+     * Add doctor schedule
+     * 
+     * @return \Illuminate\Http\Response
+     */
+    public function setDoctorSchedule(Secretary $secretary)
+    {
+        // get week days
+        $week = [];
+        $now = Carbon::now();
+        $weekStartDay = $now->startOfWeek();
+        array_push($week, $weekStartDay);
+        
+        for ($n = 0;6 > $n; $n++) {
+            $d = Carbon::parse($weekStartDay)->addDay();
+            $weekStartDay = $d;
+            array_push($week, $d);
+        }
+        return view('secretary.setDoctorSchedule', compact('week', 'secretary'));
+    }
+
+    /**
+     * Update doctor schedule
+     * 
+     * @return redirect
+     */
+
+     public function updateDoctorSchedule(Request $request, Secretary $secretary)
+     {
+        $secretary->doctor->update($request->all());
+        return redirect()->route('secretaries.set-schedule', $secretary);
+     }
 }

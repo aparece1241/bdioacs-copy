@@ -17,6 +17,7 @@ class CreateDoctorsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->string('specialized');
+            $table->json('schedule')->nullable();
             $table->timestamps();
         });
     }

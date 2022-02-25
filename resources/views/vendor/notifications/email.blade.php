@@ -16,15 +16,22 @@
 
 @endforeach
 
-@php
-    $url = explode(" ", $actionUrl);
-@endphp
-
-{{-- Custom Button --}}
-<div class="d-grid" style="grid-template-columns: 1fr 1fr; justify-content:center; align-content:center;">
-    <a href="{{ $url[0] }}" class="button button-success" target="_blank" rel="noopener">Approve</a>
-    <a href="{{ $url[1] }}" class="button button-primary" target="_blank" rel="noopener">Decline</a>
-</div>
+{{-- Action Button --}}
+@isset($actionText)
+<?php
+    switch ($level) {
+        case 'success':
+        case 'error':
+            $color = $level;
+            break;
+        default:
+            $color = 'primary';
+    }
+?>
+@component('mail::button', ['url' => $actionUrl, 'color' => $color])
+{{ $actionText }}
+@endcomponent
+@endisset
 
 {{-- Outro Lines --}}
 @foreach ($outroLines as $line)

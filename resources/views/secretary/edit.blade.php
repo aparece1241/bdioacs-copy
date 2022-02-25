@@ -12,6 +12,22 @@
                     @csrf
                     @method('PUT')
                     <div class="form-group">
+                        <label for="email">Assign to</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            </div>
+                            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror"
+                                name="name" placeholder="Not yet assigned" required autocomplete="name" autofocus
+                                value="{{ $secretary?->doctor?->user->name }}" readonly>
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label for="email">Name</label>
                         <div class="input-group">
                             <div class="input-group-prepend">

@@ -11,6 +11,11 @@ class Doctor extends Model
 
     protected $fillable = [
         'specialized',
+        'schedule',
+    ];
+
+    protected $casts = [
+        'schedule' => 'array'
     ];
 
     public function user()

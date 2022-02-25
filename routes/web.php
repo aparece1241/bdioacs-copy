@@ -37,6 +37,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('patients/{patient}/schedules', [ScheduleController::class, 'patient'])->name('patients.schedules.index');
     Route::resource('doctors', DoctorController::class);
     Route::resource('secretaries', SecretaryController::class);
+    Route::get('secretary/{secretary}/doctor-schedule', [SecretaryController::class, 'setDoctorSchedule'])->name('secretaries.set-schedule');
+    Route::post('secretary/{secretary}/doctor-schedule', [SecretaryController::class, 'updateDoctorSchedule'])->name('secretaries.update-schedule');
     Route::resource('schedules', ScheduleController::class);
     Route::get('doctors/{doctor}/schedules', [ScheduleController::class, 'create'])->name('doctors.schedules.create');
     Route::post('doctors/{doctor}/schedules', [ScheduleController::class, 'store'])->name('doctors.schedules.store');

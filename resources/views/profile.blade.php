@@ -4,6 +4,14 @@
     <li class="breadcrumb-item active" aria-current="page">Profile</li>
 @endsection
 
+@section('bread_crum_action')
+@if (Auth::user()?->secretary?->doctor)
+<a class="btn btn-primary" 
+    href="{{ route('secretaries.set-schedule', Auth::user()?->secretary) }}">Set Dr. {{ Auth::user()?->secretary?->doctor?->user->name }}'s Schedule<i
+    data-feather="edit"></i></a>
+@endif
+@endsection
+
 @section('content')
     <section class="section">
         <div class="section-body">
@@ -318,7 +326,7 @@
                                                         @if($schedule->images)
                                                             <button type="submit" class="btn btn-sm btn-warning mr-2">View Precription</button>
                                                         @else
-                                                            <button class="btn btn-sm btn-warning mr-2" disabled>View Precription</button>
+                                                            <button type="button" class="btn btn-sm btn-secondary mr-2" data-toggle="tooltip" data-placement="top" title="No Prescription Yet!">View Precription</button>
                                                         @endif
                                                         </form>
                                                     </td>

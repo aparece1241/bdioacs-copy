@@ -17,14 +17,14 @@
                 <label for="filter">Filter Doctor</label>
                 <select onchange="filter()" class="form-control form-control-sm mb-3 w-75" name="specialized" id="specialized">
                     <option value="">All</option>
-                    @foreach ($selectDropdown as $options)
-                        @if($options->specialized == $specialized)
-                            <option value="{{$options->specialized}}" selected>
-                                {{ ucfirst($options->specialized) }}
+                    @foreach ($selectDropdown as $specialize)
+                        @if($specialize == $specialized)
+                            <option value="{{$specialize}}" selected>
+                                {{ ucfirst($specialize) }}
                             </option>
                         @else
-                            <option value="{{$options->specialized}}">
-                                {{ ucfirst($options->specialized) }}
+                            <option value="{{$specialize}}">
+                                {{ ucfirst($specialize) }}
                             </option>
                         @endif
                     @endforeach
