@@ -11,6 +11,7 @@ use App\Services\UserService;
 use App\Services\FilesService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
+use Carbon\Carbon;
 
 class DoctorController extends Controller
 {
@@ -82,7 +83,19 @@ class DoctorController extends Controller
      */
     public function show(Doctor $doctor)
     {
-        return view('doctor.show', compact('doctor'));
+        // get week days
+        $week = [];
+        $now = Carbon::now();
+        $weekStartDay = $now->startOfWeek();
+        array_push($week, $weekStartDay);
+        
+        for ($n = 0;6 > $n; $n++) {
+            $d = Carbon::parse($weekStartDay)->addDay();
+            $weekStartDay = $d;
+            array_push($week, $d);
+        }
+
+        return view('doctor.show', compact('doctor', 'week'));
     }
 
     /**

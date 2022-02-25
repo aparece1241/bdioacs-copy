@@ -111,6 +111,9 @@ class SecretaryController extends Controller
      */
     public function setDoctorSchedule(Secretary $secretary)
     {
+        // get doctor schedule
+        $schedule = $secretary->doctor->schedule;
+        $schedule = $schedule ? $schedule : [];
         // get week days
         $week = [];
         $now = Carbon::now();
@@ -122,7 +125,12 @@ class SecretaryController extends Controller
             $weekStartDay = $d;
             array_push($week, $d);
         }
-        return view('secretary.setDoctorSchedule', compact('week', 'secretary'));
+
+        if (!$schedule) {
+            $schedule = ["","","","","","",""];
+        }
+
+        return view('secretary.setDoctorSchedule', compact('week', 'secretary', 'schedule'));
     }
 
     /**
@@ -133,7 +141,9 @@ class SecretaryController extends Controller
 
      public function updateDoctorSchedule(Request $request, Secretary $secretary)
      {
-        $secretary->doctor->update($request->all());
+        $data = $request->all();
+        $data['schedule'] = json_decode($data['schedule']);
+        $secretary->doctor->update($data);
         return redirect()->route('secretaries.set-schedule', $secretary);
      }
 }

@@ -37,10 +37,10 @@
                                             <th>Time</th>
                                         </tr>
                                         <tbody>
-                                            @foreach ($doctor->schedules->filter(fn($s) => $s->status === 'pending') as $schedule)
+                                            @foreach ($week as $key => $day)
                                                 <tr>
-                                                    <td>{{ $schedule->schedule_date->format('d D M, Y') }}</td>
-                                                    <td>{{ $schedule->schedule_time->format('h:m A') }}</td>
+                                                    <td>{{ $day->format('M d, Y (D)') }}</td>
+                                                    <td>{{ $doctor->schedule ? ($doctor->schedule[$key] == ""? 'Not Set' : ucfirst($doctor->schedule[$key])) : 'Not Set' }}</td>
                                                 </tr>
                                             @endforeach
                                         </tbody>

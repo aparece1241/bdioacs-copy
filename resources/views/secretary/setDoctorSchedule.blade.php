@@ -12,14 +12,17 @@
             <form method="post" id="form" action="{{ route('secretaries.update-schedule', $secretary) }}">
                 @csrf
                 <table class="table border">
-                    @foreach($week as $day)
                     <tr class="border">
-                        <td class=" border border-left">
-                            {{ $day->format('M d, Y') }}
+                        <td class="border border-left">Date</td>
+                        <td class="border border-left">Set Schedule</td>
+                    </tr>
+                    @foreach($week as $key => $day)
+                    <tr class="border">
+                        <td class="border border-left">
+                            {{ $day->format('M d, Y (D)') }}
                         </td>
                         <td>
                             <div class="form-group">
-                                <label for="schedule_date">Set Schedule</label>
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-calendar"
@@ -27,8 +30,13 @@
                                     </div>
                                    <select name="schedule_doctor" id="" class="form-control">
                                        <option value="">Set Availability</option>
-                                       <option value="available">Available</option>
-                                       <option value="not available">Not Available</option>
+                                       @foreach (['available', 'not available'] as $item)
+                                           @if($item == $schedule[$key])
+                                           <option value="{{ $item }}" selected>{{ ucfirst($item) }}</option>
+                                           @else
+                                           <option value="{{ $item }}">{{ ucfirst($item) }}</option>
+                                           @endif
+                                       @endforeach
                                    </select>
                                     @error('schedule_date')
                                     <span class="invalid-feedback" role="alert">
@@ -42,28 +50,25 @@
                     @endforeach
                 </table>
                 <input type="hidden" name="schedule" id="schedule" value="">
-                <button type="button" onclick="submit()" class="btn btn-outline-primary darken-3 rounded  btn-block mt-4">
-                    Change
-                </button>
             </form>
+            <button type="button" onclick="submit()" class="btn btn-outline-primary darken-3 rounded  btn-block mt-4">
+                Change
+            </button>
         </div>
     </div>
 </div>
 <script>
-    window.onload = () => {
-        function submit() {
-            let schedule_val = [];
-            var schedule = document.getElementsByName('schedule_doctor');
-            let form = document.getElementById('form');
-            let inputHidden = document.getElementById('schedule');
+    function submit() {
+        let schedule_val = [];
+        var schedule = document.getElementsByName('schedule_doctor');
+        let form = document.getElementById('form');
+        let inputHidden = document.getElementById('schedule');
 
-            Array.from(schedule).forEach(sched => {
-                schedule_val.push(sched.value);
-            });
-
-            inputHidden.value = JSON.stringify(schedule_val);
-            form.submit()
-        }
-    }
+        Array.from(schedule).forEach(sched => {
+            schedule_val.push(sched.value);
+        });
+        inputHidden.value = JSON.stringify(schedule_val);
+        form.submit()
+}
 </script>
 @endsection
