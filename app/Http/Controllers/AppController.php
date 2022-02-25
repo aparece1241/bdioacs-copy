@@ -34,7 +34,7 @@ class AppController extends Controller
         $totalDoctors = Doctor::count();
         return view('dashboard', compact(
             'patients',
-            'totalSchedules',
+            'totalSecretary',
             'totalDiseases',
             'totalDoctors'
         ));
