@@ -49,8 +49,8 @@
 
              // get schedule
              let schedule = {!! $schedule !!}
+            if (schedule.images) {
             let images = Object.values(schedule.images);
-            if (images) {
                 for(let i = 0; i < (images.length - 1); i++)
                 {
                     createElement(images[i])
