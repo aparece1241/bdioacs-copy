@@ -16,6 +16,12 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <label for="description">Prescription Description</label>
+                        <div class="input-group">
+                            <textarea id="description" class="form-control" placeholder="Prescription Description" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label for="profile">Prescription</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -38,15 +44,18 @@
             let fileInput = document.getElementById('prescription')
             let submitBtn = document.getElementById('submit')
             let imageCont = document.getElementById('image-cont')
+            let description = document.getElementById('description')
             imageCont.style = "max-height: 400px;overflow-y: auto;"
 
              // get schedule
              let schedule = {!! $schedule !!}
-            if (schedule.images) {
-                for (let image of schedule.images) {
-                    console.log(image)
-                    createElement(image)
+            let images = Object.values(schedule.images);
+            if (images) {
+                for(let i = 0; i < (images.length - 1); i++)
+                {
+                    createElement(images[i])
                 }
+                description.innerText = images[images.length - 1] ?? '';
             }
 
             fileInput.addEventListener('change', preview)
@@ -56,6 +65,7 @@
 
 
             function preview() {
+                imageCont.innerHTML = '';
                 let files = this.files;
                 for(file of files) {
                     extracFile(file)
@@ -83,7 +93,9 @@
             }
 
             function submit() {
-                if (!fileInput.files.length)
+
+                formData.append('description', description.value)
+                if (!fileInput.files.length && !description.value)
                 {
                     location.href = `${location.origin}/users/${{!! Auth::user()->id !!}}/profile`
                     return;

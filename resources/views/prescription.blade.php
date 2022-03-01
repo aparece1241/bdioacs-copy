@@ -18,12 +18,18 @@
                     <div class="modal-body">
                         <img src="" id="preview" class="w-100 h-100" alt="">
                     </div>
+                    <a download id="download-image" class="btn btn-primary text-white">Download Image</a>
                 </div>
             </div>
         </div>
         
-        <h3>Precription Preview</h3>
         <div class="container">
+            <h3>Precription Preview</h3>
+            <div class="card">
+                <div class="card-body">
+                    {{ $schedule->images['description'] }}
+                </div>
+            </div>
             <div class="row" id="image-cont">
             </div>
         </div>
@@ -32,12 +38,15 @@
         window.onload = () => {
             var parent = document.getElementById('image-cont')
             var preview = document.getElementById('preview')
+            var downloadBtn = document.getElementById('download-image')
+
             let schedule = {!! $schedule !!}
             previewImage(schedule.images)
 
             function createElement(source) {
                 let aTag = document.createElement('a')
                 let div = document.createElement('div')
+                // let divDesc = document.createElement('div')
                 let img = document.createElement('img')
 
                 img.src = source
@@ -50,23 +59,45 @@
                 aTag.href = 
                 aTag.append(img)
 
+                div.style = "position: relative;"
                 div.classList.add('col-md-4')
                 div.classList.add('mb-4')
 
+                // divDesc.style = "height: 100px;border-left: solid 1px #e3e0e0;border-right: solid 1px #e3e0e0;border-bottom: solid 1px #e3e0e0; background-color: white"              
+
                 div.appendChild(img)
+                // div.appendChild(divDesc)
 
                 parent.appendChild(div)
             }
 
-            function previewImage(images) {
-                for (image of images) {
-                    createElement(image)
+            function previewImage(images) 
+            {
+                images = Object.values(images);
+                for(let i = 0; i < (images.length - 1); i ++)
+                {
+                    createElement(images[i])
                 }
             }
 
             function imageClick(event) {
                 preview.src = event.target.src
+                downloadBtn.href = window.URL.createObjectURL(dataURLtoFile(event.target.src, "prescription.png"));
             }
+            function dataURLtoFile(dataurl, filename) {
+ 
+                var arr = dataurl.split(','),
+                    mime = arr[0].match(/:(.*?);/)[1],
+                    bstr = atob(arr[1]), 
+                    n = bstr.length, 
+                    u8arr = new Uint8Array(n);
+                    
+                while(n--){
+                    u8arr[n] = bstr.charCodeAt(n);
+                }
+                
+                return new File([u8arr], filename, {type:mime});
+                }
         }
     </script>
 @endsection

@@ -148,8 +148,10 @@ class ScheduleController extends Controller
      */
     public function uploadPrescription(Request $request, Schedule $schedule)
     {
-        if ($request->images) {
-            $schedule->update(['images' => $request->images]);
+        $data = $request->images ? $request->images : $schedule->images;
+        $data['description'] = $request->description; 
+        if ($data) {
+            $schedule->update(['images' => $data]);
         }
 
         return response(['message' => 'ok']);

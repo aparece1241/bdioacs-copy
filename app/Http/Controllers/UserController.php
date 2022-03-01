@@ -16,6 +16,8 @@ class UserController extends Controller
     }
     public function profile(User $user)
     {
+        // User must be the authenticated
+        $user = request()->user();
         // $schedules = $user->type == User::DOCTOR
         //     ? $user->doctor?->schedules
         //     : $user->patient?->schedules;
