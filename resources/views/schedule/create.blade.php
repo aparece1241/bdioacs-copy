@@ -200,8 +200,16 @@
 
                                 <select name="reason" id="" class="form-control @error('reason') is-invalid @enderror" autocomplete="reason">
                                         <option value="">Please select a reason</option>        
-                                        <option value="Daily check-up">Daily Check-up</option>        
-                                        <option value="Desease">Desease</option>
+                                        <option value="Check-up">Check-up</option>        
+                                        <option value="Prescription">Prescription</option>
+                                        <option value="Test Result">Test result</option>
+                                        <option value="Cough">Cough</option>
+                                        <option value="Immunisation">Immunisation</option>
+                                        <option value="Throath symptom/complain">Throath symptom/complain</option>
+                                        <option value="Back complaint">Back complaint</option>
+                                        <option value="Administrative procedure">Administrative procedure</option>
+                                        <option value="Blood test">Blood test</option>
+                                        <option value="Rash">Rash</option>
                                 </select>
 
                                 <!-- <textarea id="reason" type="time"
