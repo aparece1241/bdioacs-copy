@@ -64,10 +64,17 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fa fa-close" aria-hidden="true"></i></span>
                             </div>
-                            <input id="specialized" type="text"
+                            <select id="specialized" type="text"
                                 class="form-control  @error('specialized') is-invalid @enderror" name="specialized"
                                 placeholder="ex: Surgery" required autocomplete="specialized" autofocus
                                 value="{{ old('specialized') }}">
+                                @foreach (["Emergency Medicine", "Anesthesiologist", "Surgeon", "Orthodologist"] as $specialized)
+                                    @if (old('specialized') == $specialized)
+                                        <option value="{{$specialized}}" selected>{{$specialized}}</option>
+                                    @else
+                                        <option value="{{$specialized}}">{{$specialized}}</option>
+                                @endforeach
+                            </select>
                             @error('specialized')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>

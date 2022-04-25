@@ -64,6 +64,6 @@ class LoginController extends Controller
 
     protected function redirectTo()
     {
-        return route('users.profile', Auth::user());
+        return route('dashboard');
     }
 }

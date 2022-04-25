@@ -10,6 +10,7 @@ use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\MeetingController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\ScheduleController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\UserController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Support\Facades\Route;
@@ -40,6 +41,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('secretary/{secretary}/doctor-schedule', [SecretaryController::class, 'setDoctorSchedule'])->name('secretaries.set-schedule');
     Route::post('secretary/{secretary}/doctor-schedule', [SecretaryController::class, 'updateDoctorSchedule'])->name('secretaries.update-schedule');
     Route::resource('schedules', ScheduleController::class);
+    Route::resource('services', ServiceController::class);
     Route::get('doctors/{doctor}/schedules', [ScheduleController::class, 'create'])->name('doctors.schedules.create');
     Route::post('doctors/{doctor}/schedules', [ScheduleController::class, 'store'])->name('doctors.schedules.store');
     Route::get('doctors/{schedule}/prescription', [ScheduleController::class, 'prescription'])->name('doctors.schedule.prescription');

@@ -49,12 +49,14 @@
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Main</li>
-            @role('Admin')
-                <li class="dropdown @if (Route::is('dashboard')) active @endif">
-                    <a href="{{ route('dashboard') }}" class="nav-link"><i
-                            data-feather="monitor"></i><span>Dashboard</span></a>
-                </li>
-            @endrole
+            <li class="dropdown @if (Route::is('dashboard')) active @endif">
+                <a href="{{ route('dashboard') }}" class="nav-link"><i
+                        data-feather="monitor"></i><span>Dashboard</span></a>
+            </li>
+            <li class="dropdown @if (Route::is('user.profile')) active @endif">
+                <a href="{{ route('users.profile', auth()->user()) }}" class="nav-link"><i
+                        data-feather="user"></i><span>Profile</span></a>
+            </li>
             <li class="dropdown @if (Route::is('doctors.*')) active @endif">
                 <a href="{{ route('doctors.index') }}" class="nav-link"><i
                         data-feather="users"></i><span>Doctors</span></a>
@@ -82,6 +84,10 @@
                             data-feather="list"></i><span>Schedules</span></a>
                 </li>
             @endrole
+            <li class="dropdown @if (Route::is('services.*')) active @endif">
+                <a href="{{ route('services.index') }}" class="nav-link"><i
+                        data-feather="user-check"></i><span>Services</span></a>
+            </li>
         </ul>
     </aside>
 </div>

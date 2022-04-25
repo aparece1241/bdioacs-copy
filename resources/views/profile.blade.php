@@ -6,7 +6,7 @@
 
 @section('bread_crum_action')
 @if (Auth::user()?->secretary?->doctor)
-<a class="btn btn-primary" 
+<a class="btn btn-primary"
     href="{{ route('secretaries.set-schedule', Auth::user()?->secretary) }}">Set Dr. {{ Auth::user()?->secretary?->doctor?->user->name }}'s Schedule<i
     data-feather="edit"></i></a>
 @endif
@@ -261,11 +261,11 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($schedules as $schedule)
+                                        @forelse ($schedules as $schedule)
                                             <tr>
                                                 <td> {{ $schedule->id }} </td>
                                                 @role('Patient')
-                                                    <td> {{ $schedule->doctor->user->name }} </td>
+                                                    <td> {{$schedule ? $schedule->doctor->user->name : null }} </td>
                                                 @else
                                                     <td> {{ $schedule->patient->user->name }} </td>
                                                 @endrole
@@ -337,7 +337,9 @@
                                                     </td>
                                                 @endrole
                                             </tr>
-                                        @endforeach
+                                        @empty
+                                            <p>No Data!</p>
+                                        @endforelse
                                     </tbody>
                                 </table>
                             </div>

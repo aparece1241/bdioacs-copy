@@ -30,20 +30,20 @@
                                                 <td>{{ $patient->user->contact_number }}</td>
                                                 <td>{{ $patient->created_at->diffForHumans() }}</td>
                                                 <td>
-                                                    <a href="{{ route('patients.edit', $patient) }}"
-                                                        class="btn btn-sm btn-info"><i class="fa fa-edit"></i></a>
-                                                    <form class="d-inline"
-                                                        action="{{ route('patients.destroy', $patient) }}" method="post">
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit" class="btn btn-sm btn-danger"><i
-                                                                class="fa fa-trash"></i></button>
-                                                    </form>
-
+                                                    @role('Admin')
+                                                        <a href="{{ route('patients.edit', $patient) }}"
+                                                            class="btn btn-sm btn-info"><i class="fa fa-edit"></i></a>
+                                                        <form class="d-inline"
+                                                            action="{{ route('patients.destroy', $patient) }}" method="post">
+                                                            @csrf
+                                                            @method('DELETE')
+                                                            <button type="submit" class="btn btn-sm btn-danger"><i
+                                                                    class="fa fa-trash"></i></button>
+                                                        </form>
+                                                    @endrole
                                                 </td>
                                             </tr>
                                         @endforeach
-
                                     </tbody>
                                 </table>
                             </div>

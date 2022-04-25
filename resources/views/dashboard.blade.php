@@ -7,6 +7,7 @@
     <section class="section">
         <div class="section-body">
             <div class="row ">
+                @hasanyrole('Admin')
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
                         <div class="card-statistic-4">
@@ -28,6 +29,8 @@
                         </div>
                     </div>
                 </div>
+                @endhasanyrole
+                @hasanyrole('Admin|Doctor|Secretary')
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
                         <div class="card-statistic-4">
@@ -49,6 +52,7 @@
                         </div>
                     </div>
                 </div>
+                @endhasanyrole
                 <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="card">
                         <div class="card-statistic-4">
@@ -92,6 +96,7 @@
                     </div>
                 </div>
             </div>
+            @role('Admin')
             <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -120,7 +125,6 @@
                                                 <td>{{ $patient->created_at->diffForHumans() }}</td>
                                             </tr>
                                         @endforeach
-
                                     </tbody>
                                 </table>
                             </div>
@@ -128,6 +132,54 @@
                     </div>
                 </div>
             </div>
+            @endrole
+            <div class="section-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                        <p>Recent Schedule\s: </p>
+                                        <table class="table table-striped" id="save-stage" style="width:100%;">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">
+                                                        #ID
+                                                    </th>
+                                                    <th>Doctor</th>
+                                                    <th>Patient</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Status</th>
+                                                    {{-- <th>Action</th> --}}
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @forelse ($schedules as $schedule)
+                                                    <tr>
+                                                        <td> {{ $schedule->id }} </td>
+                                                        <td> {{ $schedule->doctor->user->name }}</td>
+                                                        <td> {{ $schedule->name }} </td>
+                                                        <td> {{ $schedule->schedule_date->format('d D M, Y') }} </td>
+                                                        <td> {{ $schedule->schedule_time->format('h:m A') }}</td>
+                                                        <td>
+                                                            <div
+                                                                class="badge badge-{{ \App\Utils\ScheduleUtil::getStatusColor($schedule->status) }} badge-shadow">
+                                                                {{ $schedule->status }}
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                @empty
+                                                    <p>No Data</p>
+                                                @endforelse
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
 @endsection

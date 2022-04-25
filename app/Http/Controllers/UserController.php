@@ -18,20 +18,6 @@ class UserController extends Controller
     {
         // User must be the authenticated
         $user = request()->user();
-        // $schedules = $user->type == User::DOCTOR
-        //     ? $user->doctor?->schedules
-        //     : $user->patient?->schedules;
-
-        // if (!$schedules) {
-        //     $schedules = [];
-        // }
-
-        // $meetings = $user->type == User::DOCTOR
-        //     ? $user->doctor?->meetings
-        //     : $user->patient?->meetings;
-        // if (!$meetings) {
-        //     $meetings = [];
-        // }
         $meetings = [];
         $schedules = [];
 
@@ -51,7 +37,6 @@ class UserController extends Controller
 
         $meetings = !$meetings ? [] : $meetings;
         $schedules = !$schedules ? [] : $schedules;
-
         return view('profile', compact('user', 'schedules', 'meetings'));
     }
 

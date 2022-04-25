@@ -192,30 +192,22 @@
                                     </div>
                                 </div>
                             @endif
-                            
+
                             <input type="hidden" name="type" value="{{ $is_physical ? 'physical' : 'online' }}">
 
                             <div class="form-group">
                                 <label for="reason">Reason of Appointment (please specified) </label>
 
                                 <select name="reason" id="" class="form-control @error('reason') is-invalid @enderror" autocomplete="reason">
-                                        <option value="">Please select a reason</option>        
-                                        <option value="Check-up">Check-up</option>        
-                                        <option value="Prescription">Prescription</option>
-                                        <option value="Test Result">Test result</option>
-                                        <option value="Cough">Cough</option>
-                                        <option value="Immunisation">Immunisation</option>
-                                        <option value="Throath symptom/complain">Throath symptom/complain</option>
-                                        <option value="Back complaint">Back complaint</option>
-                                        <option value="Administrative procedure">Administrative procedure</option>
-                                        <option value="Blood test">Blood test</option>
-                                        <option value="Rash">Rash</option>
+                                    @foreach (["Check-up", "Prescription", "Test Result", "Cough", "Immunisation",
+                                               "Throath symptom/complain", "Back complaint", "Administrative procedure",
+                                               "Blood Test", "Rash"] as $reason)
+                                               @if (old('reason') == $reason)
+                                                    <option value="{{$reason}}" selected>{{$reason}}</option>
+                                                @else
+                                                    <option value="{{$reason}}">{{$reason}}</option>
+                                    @endforeach
                                 </select>
-
-                                <!-- <textarea id="reason" type="time"
-                                    class="form-control  @error('reason') is-invalid @enderror" name="reason" required
-                                    autocomplete="reason" autofocus>{{ old('reason') }}</textarea> -->
-                                
                                 @error('reason')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
