@@ -12,8 +12,18 @@
             </aside>
         </div>
         <div class="patient-content">
-            <div></div>
+            <div>
+                <div id="slider">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
             <div></div>
         </div>
     </div>
 </section>
+@push('scripts')
+    <script src="{{ asset('assets/js/page/patient.js') }}"></script>
+@endpush

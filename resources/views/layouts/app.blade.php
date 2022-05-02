@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
     <link rel="stylesheet" href="{{ asset('css/patient.css') }}">
     <link rel="icon" href="{{ asset('images/logo.jpg')}}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css" rel="stylesheet"/>
+
 </head>
 
 <body>
@@ -69,6 +71,7 @@
     <script src="{{ asset('assets/bundles/summernote/summernote-bs4.js')}}"></script>
     <script src="{{ asset('assets/js/page/datatables.js') }}"></script>
     <script src="{{ asset('assets/js/page/chat.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     @stack('scripts')
     <!-- Template JS File -->
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
