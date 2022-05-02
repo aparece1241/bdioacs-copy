@@ -22,9 +22,10 @@ class PatientController extends Controller
      */
     public function index()
     {
-        $patients = Patient::with('user')->get();
+        return view('patient.index');
+        // $patients = Patient::with('user')->get();
 
-        return view('patient.index', compact('patients'));
+        // return view('patient.index', compact('patients'));
     }
 
 

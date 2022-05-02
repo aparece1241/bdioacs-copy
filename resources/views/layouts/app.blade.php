@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/patient.css') }}">
     <link rel="icon" href="{{ asset('images/logo.jpg')}}">
 </head>
 
@@ -33,27 +34,29 @@
     <div class="loader"></div>
     <div id="app">
         <div class="main-wrapper main-wrapper-1">
-            @include('component.navbar')
+            @if(request()->route()->getName() != 'patient-landing')
+                @include('component.navbar')
 
-            <main class="main-content">
-                <section class="section">
-                    <div class="section-body">
-                        <div class="card ">
-                            <div class="card-header py-3 d-flex justify-content-between">
-                                <nav aria-label="breadcrumb " class="m-0">
-                                    <ol class="breadcrumb bg-transparent p-2 my-0">
-                                        <li class="breadcrumb-item"><a href="#">BDIOACS</a></li>
-                                        @yield('breadcrums')
-                                    </ol>
-                                </nav>
-                                @yield('bread_crum_action')
+                <main class="main-content">
+                    <section class="section">
+                        <div class="section-body">
+                            <div class="card ">
+                                <div class="card-header py-3 d-flex justify-content-between">
+                                    <nav aria-label="breadcrumb " class="m-0">
+                                        <ol class="breadcrumb bg-transparent p-2 my-0">
+                                            <li class="breadcrumb-item"><a href="#">BDIOACS</a></li>
+                                            @yield('breadcrums')
+                                        </ol>
+                                    </nav>
+                                    @yield('bread_crum_action')
+                                </div>
+
                             </div>
-
                         </div>
-                    </div>
-                </section>
-                @yield('content')
-            </main>
+                    </section>
+                    @yield('content')
+                </main>
+            @endif
         </div>
     </div>
     <!-- General JS Scripts -->

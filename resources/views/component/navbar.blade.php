@@ -37,7 +37,6 @@
                 </div>
             </li>
         @endauth
-
     </ul>
 </nav>
 <div class="main-sidebar sidebar-style-2">

@@ -26,8 +26,8 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [LoginController::class, 'showLoginForm'])->name('landing');
+Route::get('/', [PatientController::class, 'index'])->name('patient-landing');
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('landing');
 Route::post('login', [LoginController::class, 'login'])->name('login');
 
 Route::middleware(['auth', 'verified'])->group(function () {
