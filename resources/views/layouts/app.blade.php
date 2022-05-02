@@ -72,6 +72,7 @@
     <script src="{{ asset('assets/js/page/datatables.js') }}"></script>
     <script src="{{ asset('assets/js/page/chat.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="{{ asset('assets/js/lib/carousel.js') }}"></script>
     @stack('scripts')
     <!-- Template JS File -->
     <script src="{{ asset('assets/js/scripts.js') }}"></script>

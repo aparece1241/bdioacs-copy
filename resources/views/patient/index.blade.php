@@ -13,11 +13,11 @@
         </div>
         <div class="patient-content">
             <div>
-                <div id="slider">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+                <div id="carousel">
+                    <div class="carousel-item">1</div>
+                    <div class="carousel-item">2</div>
+                    <div class="carousel-item">3</div>
+                    <div class="carousel-item">4</div>
                 </div>
             </div>
             <div></div>
