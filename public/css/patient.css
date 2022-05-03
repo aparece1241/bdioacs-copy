@@ -29,8 +29,52 @@
 }
 
 .patient-content {
-    height: calc(100vh - 70px);
-    background: aliceblue;
+    height: calc(100vh - 216px);
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.patient-left-divide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: solid 1px; */
+}
+
+.patient-right-divide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.patient-subheader {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#carousel {
+    position: relative;
+    /* border: solid 1px; */
+    height: 62vh;
+    width: 40vw;
+}
+
+.carousel-item > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* padding: 5px; */
+    /* background: white; */
+}
+
+.carousel-dots-container {
+    height: 0px !important;
+}
+
+.carousel-prev-next-container {
+    position: absolute;
+    width: 100%;
+    top: 35%;
 }

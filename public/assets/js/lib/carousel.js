@@ -1,16 +1,16 @@
-window.isAutoSwitch = true
+// window.isAutoSwitch = true
 window.dataId = 1
 window.onload = () => {
   // generate styles
   generateStylings()
-  
+
   // get carousel container
   let carouselContainer = document.getElementById('carousel')
   if(validateCarouselContainer(carouselContainer)) {
     let carouselItems = document.getElementsByClassName('carousel-item')
     generateRedirectionDots(carouselContainer, carouselItems)
     generatePerviousNextButtons(carouselContainer)
-    
+
     // check if auto carousel auto slide
     if (isAutoSwitch) {
       let interval = setInterval(() => {
@@ -26,7 +26,7 @@ window.onload = () => {
 
 /**
  * validate carousel container
- * @param {*} carouselContainer 
+ * @param {*} carouselContainer
  */
 function validateCarouselContainer(carouselContainer) {
   let isValid = true
@@ -39,15 +39,15 @@ function validateCarouselContainer(carouselContainer) {
 
 /**
  * Generate redirection dots
- * @param {*} carouselContainer 
- * @param {*} carouselItems 
+ * @param {*} carouselContainer
+ * @param {*} carouselItems
  */
 function generateRedirectionDots(carouselContainer, carouselItems) {
   // carousel event listeners
   function carouselDotEventListener(){
     carouselPagesSwitcher(this.id)
   }
-  
+
   // generate elements
   let carouselDotsContainer = document.createElement('div')
   carouselDotsContainer.classList.add('carousel-dots-container')
@@ -58,13 +58,13 @@ function generateRedirectionDots(carouselContainer, carouselItems) {
     carouselDot.addEventListener('click', carouselDotEventListener)
     carouselDotsContainer.appendChild(carouselDot)
   })
-  
+
   carouselContainer.appendChild(carouselDotsContainer)
 }
 
 /**
  * Switch the pages of carousel by data id
- * @param {*} dataId 
+ * @param {*} dataId
  */
 function carouselPagesSwitcher(dataId) {
   // remove active class
@@ -74,11 +74,11 @@ function carouselPagesSwitcher(dataId) {
     el.style = 'background-color: transparent'
     el.classList.remove('active-carousel-dot')
   })
-  
+
   Array.from(carouselItems).forEach(el => {
     el.style = 'display: none'
   })
-  
+
   // add active class to the element selected
   document.getElementById(`${dataId}`).classList.add('active-carousel-dot')
   Array.from(carouselItems).find(el => el.dataset.id == dataId).style = 'display: block'
@@ -86,42 +86,42 @@ function carouselPagesSwitcher(dataId) {
 
 /**
  * Generate carousel buttons
- * @param {*} carouselContainer 
+ * @param {*} carouselContainer
  */
 function generatePerviousNextButtons(carouselContainer) {
   let prevNextContainer = document.createElement('div')
   let leftButton = document.createElement('button')
   let rightButton = document.createElement('button')
-  
+
   // assign text
   leftButton.innerHTML = '<'
   rightButton.innerHTML = '>'
-  
+
   // assign class
   prevNextContainer.classList.add('carousel-prev-next-container')
   leftButton.classList.add('carousel-button')
   rightButton.classList.add('carousel-button')
   leftButton.id = 'carousel-button-left'
   rightButton.id = 'carousel-button-right'
-  
+
   //add event listeners
   leftButton.addEventListener('click', e => {
     carouselButtonsClickListener('left')
   })
-  
+
   rightButton.addEventListener('click', e => {
     carouselButtonsClickListener('right')
   })
-  
+
   /**
    * carousel button event listener (Inner method)
-   * @param {*} direction 
+   * @param {*} direction
    */
   function carouselButtonsClickListener(direction) {
     let activeCarouselPage = document.getElementsByClassName('active-carousel-dot')
     let dots =  document.getElementsByClassName('carousel-dots')
     activeCarouselPage = activeCarouselPage.length ? activeCarouselPage[0] : dots[0]
-    
+
     dataId = parseInt(activeCarouselPage.id)
     if (direction == 'left') {
       dataId = (dataId - 1) ? dataId - 1 : dots.length
@@ -131,7 +131,7 @@ function generatePerviousNextButtons(carouselContainer) {
     }
     carouselPagesSwitcher(dataId)
   }
-  
+
   prevNextContainer.appendChild(leftButton)
   prevNextContainer.appendChild(rightButton)
   carouselContainer.appendChild(prevNextContainer)
@@ -144,7 +144,7 @@ function generateStylings() {
   // generate styles
   let carouselDotStyles = document.createElement('style')
   let head = document.querySelector('head')
-  carouselDotStyles.innerHTML = 
+  carouselDotStyles.innerHTML =
   `
   .carousel-item {
     animation: fade-in ease 1s 1;
@@ -209,5 +209,5 @@ function generateStylings() {
     float: right;
   }
   `
-  head.appendChild(carouselDotStyles)  
+  head.appendChild(carouselDotStyles)
 }
