@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ asset('assets/bundles/datatables/datatables.min.css') }}">
     <link rel="stylesheet"
         href="{{ asset('assets/bundles/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.css">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
@@ -36,9 +37,8 @@
     <div class="loader"></div>
     <div id="app">
         <div class="main-wrapper main-wrapper-1">
-            @if(request()->route()->getName() != 'patient-landing')
-                @include('component.navbar')
-
+            @if(request()->route()->getName() != 'patient-landing' && request()->route()->getName() != 'patient-calendar')
+            @include('component.navbar')
                 <main class="main-content">
                     <section class="section">
                         <div class="section-body">
@@ -71,8 +71,7 @@
     <script src="{{ asset('assets/bundles/summernote/summernote-bs4.js')}}"></script>
     <script src="{{ asset('assets/js/page/datatables.js') }}"></script>
     <script src="{{ asset('assets/js/page/chat.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="{{ asset('assets/js/lib/carousel.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
     @stack('scripts')
     <!-- Template JS File -->
     <script src="{{ asset('assets/js/scripts.js') }}"></script>

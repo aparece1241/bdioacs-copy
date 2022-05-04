@@ -27,6 +27,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 Route::get('/', [PatientController::class, 'index'])->name('patient-landing');
+Route::get('/calendar', [PatientController::class, 'calendar'])->name('patient-calendar');
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('landing');
 Route::post('login', [LoginController::class, 'login'])->name('login');
 

@@ -5,7 +5,7 @@
         <div class="patient-navbar">
             <aside id="sidebar-wrapper">
                 <div class="sidebar-brand">
-                    <a href="/"> <img alt="image" src="http://localhost:8000/images/logo.jpg" class="patient-header-logo">
+                    <a href="/"> <img alt="image" src="{{ asset('images/logo.jpg') }}" class="patient-header-logo">
                         <span class="patient-logo-name">BDIOACS</span>
                     </a>
                 </div>
@@ -35,5 +35,6 @@
     </div>
 </section>
 @push('scripts')
+    <script src="{{ asset('assets/js/lib/carousel.js') }}"></script>
     <script src="{{ asset('assets/js/page/patient.js') }}"></script>
 @endpush

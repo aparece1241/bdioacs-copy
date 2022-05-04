@@ -28,6 +28,13 @@ class PatientController extends Controller
         // return view('patient.index', compact('patients'));
     }
 
+    /**
+     * Calendar
+     */
+    public function calendar(Type $var = null)
+    {
+        return view('patient.calendar');
+    }
 
     /**
      * Show the form for editing the specified resource.
