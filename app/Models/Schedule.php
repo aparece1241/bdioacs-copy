@@ -2,8 +2,8 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Schedule extends Model
 {
@@ -51,5 +51,10 @@ class Schedule extends Model
     public function patient()
     {
         return $this->belongsTo(Patient::class);
+
+    }
+    public function getDateAttribute(Type $var = null)
+    {
+        return $this->schedule_date->format('Y-m-d');
     }
 }

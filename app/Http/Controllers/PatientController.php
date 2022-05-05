@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\UserRequest;
+use Carbon\Carbon;
 use App\Models\Patient;
 use App\Models\Schedule;
-use App\Services\UserService;
 use Illuminate\Http\Request;
+use App\Services\UserService;
+use App\Http\Requests\UserRequest;
 
 class PatientController extends Controller
 {
@@ -30,10 +31,14 @@ class PatientController extends Controller
 
     /**
      * Calendar
+     *
+     * @return View
      */
-    public function calendar(Type $var = null)
+    public function calendar()
     {
-        return view('patient.calendar');
+        $schedules = Schedule::whereMonth('schedule_date', Carbon::now()->format('m'))->get();
+        $schedules = $schedules->groupBy('date');
+        return view('patient.calendar', compact('schedules'));
     }
 
     /**

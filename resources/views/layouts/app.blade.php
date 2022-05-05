@@ -58,6 +58,8 @@
                     </section>
                     @yield('content')
                 </main>
+            @else
+                @yield('content')
             @endif
         </div>
     </div>
@@ -71,7 +73,10 @@
     <script src="{{ asset('assets/bundles/summernote/summernote-bs4.js')}}"></script>
     <script src="{{ asset('assets/js/page/datatables.js') }}"></script>
     <script src="{{ asset('assets/js/page/chat.js') }}"></script>
+    {{-- Calendar --}}
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    {{-- Sweet alert --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     @stack('scripts')
     <!-- Template JS File -->
     <script src="{{ asset('assets/js/scripts.js') }}"></script>

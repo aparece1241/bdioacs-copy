@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('content')
 <section class="section">
     {{-- style="min-height:100vh; background-image: url({{ asset('images/login_bg.jpg') }}); background-repeat: no-repeat; background-size: cover; background-position: center center;" --}}
     <div id="app">
@@ -28,12 +29,13 @@
                     <div class="text-left">
                         <h2 class="card-text">Start your appointment now!</h2>
                     </div>
-                    <a href="http://" class="btn btn-primary mt-5 px-4 p">Appointment</a>
+                    <a href="{{ route('patient-calendar') }}" class="btn btn-primary mt-5 px-4 p">Appointment</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+@endsection
 @push('scripts')
     <script src="{{ asset('assets/js/lib/carousel.js') }}"></script>
     <script src="{{ asset('assets/js/page/patient.js') }}"></script>
