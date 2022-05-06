@@ -18,18 +18,20 @@ let full = {
 }
 
 var calendarElement = document.getElementById('calendar')
-var calendar = new FullCalendar.Calendar(calendarElement, {
-    initialView: 'dayGridMonth',
-    dateClick: function(info) {
-       slots = typeof(schedules[info.dateStr]) == 'undefined'? 0 : schedules[info.dateStr].length
-       console.log(slots)
-       if (slots >= 20) {
-           swal(full)
-        } else {
-           available.text = `${20 - slots} slot/s available! \n Do you want to proceed for an appointment and consultation?`
-           swal(available)
-       }
-    },
-    selectable: true
-})
-calendar.render();
+if (calendarElement) {
+    var calendar = new FullCalendar.Calendar(calendarElement, {
+        initialView: 'dayGridMonth',
+        dateClick: function(info) {
+           slots = typeof(schedules[info.dateStr]) == 'undefined'? 0 : schedules[info.dateStr].length
+           console.log(slots)
+           if (slots >= 20) {
+               swal(full)
+            } else {
+               available.text = `${20 - slots} slot/s available! \n Do you want to proceed for an appointment and consultation?`
+               swal(available)
+           }
+        },
+        selectable: true
+    })
+    calendar.render();
+}

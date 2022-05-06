@@ -4,6 +4,19 @@
     box-shadow: 0px 5px 15px 0px #80808078;
 }
 
+#patient-info-choice {
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    width: 100vw;
+    height: 70vh;
+    color: #ffffff;
+}
+
+.patient-landing-info {
+    height: 100%;
+}
+
 #sidebar-wrapper {
     height: 100%;
     display: grid;
@@ -57,24 +70,65 @@
 #carousel {
     position: relative;
     /* border: solid 1px; */
-    height: 62vh;
-    width: 40vw;
+    /* height: 70vh; */
+    height: calc(100vh - 70px);
+    z-index: 0;
+}
+
+.carousel-item {
+    height: 100%;
 }
 
 .carousel-item > img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     /* padding: 5px; */
     /* background: white; */
 }
 
 .carousel-dots-container {
-    height: 0px !important;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    bottom: 50px;
+    text-align: center;
 }
 
 .carousel-prev-next-container {
     position: absolute;
     width: 100%;
-    top: 35%;
+    top: 35% !important;
+    display: none;
+}
+
+#left-pane {
+    margin: 0px 0px 0px 45px;
+    background: #6777ef38;
+    padding: 25px;
+}
+
+#right-pane {
+    margin: 0px 40px 0px 0px;
+    background: #6777ef38;
+    padding: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    #carousel {
+        display: none;
+    }
+    #patient-info-choice {
+        position: relative;
+        top: 0;
+        width: 100vw;
+        height: auto;
+        display: grid;
+        left: 15px;
+    }
+    #left-pane {
+        margin: 10px 0px 0px 0px;
+    }
+    #right-pane {
+        margin: 10px 0px 0px 0px;
+    }
 }
