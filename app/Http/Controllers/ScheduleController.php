@@ -9,9 +9,16 @@ use App\Models\Patient;
 use App\Models\Schedule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use App\Services\UserService;
 
 class ScheduleController extends Controller
 {
+    protected $userService;
+    public function __construct()
+    {
+        $this->userService = new UserService();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -85,6 +92,26 @@ class ScheduleController extends Controller
     }
 
     /**
+     * Create new schedule with employee and users
+     */
+    public function storev2(ScheduleRequest $request)
+    {
+        $user_data = $request->all();
+        $user_data['password'] = Hash::make('password');
+        $user = $this->userService->create($user_data);
+
+        $patient_data = $request->all();
+        $patient_data['user_id'] = $user->id;
+        $patient = Patient::create($patient_data);
+
+        $schedule_data = $request->all();
+        $schedule_data['patient_id'] = $patient->id;
+        $schedule_data['doctor_id'] = 1; // testing
+        $schedule = (new Schedule())->createSchedule($schedule_data);
+        return back()->with('success', 'Successfully created!');
+    }
+
+    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -149,7 +176,7 @@ class ScheduleController extends Controller
     public function uploadPrescription(Request $request, Schedule $schedule)
     {
         $data = $request->images ? $request->images : $schedule->images;
-        $data['description'] = $request->description; 
+        $data['description'] = $request->description;
         if ($data) {
             $schedule->update(['images' => $data]);
         }

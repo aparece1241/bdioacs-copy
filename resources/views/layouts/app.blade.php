@@ -27,10 +27,9 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/patient.css') }}">
     <link rel="icon" href="{{ asset('images/logo.jpg')}}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.css" rel="stylesheet"/>
-
+    @stack('css')
 </head>
 
 <body>

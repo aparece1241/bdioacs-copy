@@ -25,7 +25,7 @@ class ScheduleRequest extends FormRequest
      */
     public function rules()
     {
-        return [
+        $rules = [
             'patient_id' => 'required|exists:patients,id',
             'name' => 'required|max:255',
             'gender' => 'required|integer|digits:1',
@@ -40,5 +40,11 @@ class ScheduleRequest extends FormRequest
             'height' => 'sometimes|required|numeric',
             'type' => Rule::in([Schedule::ONLINE, Schedule::PHYSICAL])
         ];
+
+        if (request()->route()->getName() == 'create-schedule') {
+            $rules = array_slice($rules, 1);
+        }
+
+        return $rules;
     }
 }
