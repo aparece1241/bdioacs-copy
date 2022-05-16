@@ -4,7 +4,7 @@
 Hello Dear User!
 
 We have noticed that the schedule you set have a conflict on our side.
-We would like to change the schedule to {{ \Carbon\Carbon::parse($schedule->schedule_date)->isoFormat('dddd', 'D', 'yyyy') }}  {{ \Carbon\Carbon::parse($schedule->schedule_time)->format('h:i:m') }}.Would you still agree?
+We would like to change the schedule to {{ \Carbon\Carbon::parse($schedule->schedule_date)->format('Y-m-d') }}  {{ \Carbon\Carbon::parse($schedule->schedule_time)->format('H:i A') }}.Would you still agree?
 
 <!-- Custom Button -->
 <div class="d-grid" style="grid-template-columns: 1fr 1fr; justify-content:center; align-content:center;">

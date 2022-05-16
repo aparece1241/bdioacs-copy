@@ -273,7 +273,7 @@
                                                 @role('Patient')
                                                     <td> {{$schedule ? $schedule->doctor->user->name : null }} </td>
                                                 @else
-                                                    <td> {{ $schedule->patient->user->name }} </td>
+                                                    <td> {{ $schedule->name }} </td>
                                                 @endrole
                                                 <td> {{ ucfirst($schedule->type) }} </td>
                                                 <td> {{ $schedule->schedule_date->format('d D M, Y') }} </td>

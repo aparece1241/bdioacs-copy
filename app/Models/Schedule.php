@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Notifications\Notifiable;
 
 class Schedule extends Model
 {
-    use HasFactory;
+    use HasFactory, Notifiable;
 
     const PENDING = 'pending';
     const ACCEPTED = 'accepted';
@@ -21,6 +22,7 @@ class Schedule extends Model
 
     protected $fillable = [
         'patient_id',
+        'doctor_id',
         'name',
         'gender',
         'contact_number',
@@ -53,8 +55,15 @@ class Schedule extends Model
         return $this->belongsTo(Patient::class);
 
     }
-    public function getDateAttribute(Type $var = null)
+
+    public function getDateAttribute()
     {
         return $this->schedule_date->format('Y-m-d');
+    }
+
+    // Create new schedule
+    public function createSchedule($data)
+    {
+        return $this::create($data);
     }
 }

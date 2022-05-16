@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@push('css')
+    <link rel="stylesheet" href="{{ asset('css/patient.css') }}">
+@endpush
 @section('content')
 <section class="section">
     {{-- style="min-height:100vh; background-image: url({{ asset('images/login_bg.jpg') }}); background-repeat: no-repeat; background-size: cover; background-position: center center;" --}}
@@ -31,8 +34,8 @@
                     <h4>Start your appointment now!</h4>
                     <br>
                     <br>
-                    <a href="#" class="btn btn-primary w-75 mt-1">Online Appointment</a>
-                    <a href="#" class="btn btn-primary w-75 mt-1">Physical Appointment</a>
+                    <a href="{{ route('patient-calendar').'?type=online' }}" class="btn btn-primary w-75 mt-1">Online Appointment</a>
+                    <a href="{{ route('patient-calendar').'?type=physical' }}" class="btn btn-primary w-75 mt-1">Physical Appointment</a>
                 </div>
             </div>
         </div>
@@ -40,52 +43,58 @@
         <br>
         <br>
         <div class="container" id="services">
-            <h3 class="text-center"><bold>Services</bold></h3>
+            <h3 class="text-center">Services</h3>
             <br>
             <br>
             <div class="row text-center">
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="card w-75">
-                        <div class="card-body">Test</div>
-                        <div class="card-body">Test</div>
-                        <div class="card-body">Test</div>
-                        <div class="card-body">Test</div>
-                        <div class="card-body">Test</div>
+                        <div class="text-center pt-4">
+                            <h5>Online Consultation</h5>
+                        </div>
+                        <div class="card-body text-justify">
+                            <hr>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia voluptate fuga laborum quis ipsa, voluptatum quae, aut sed sunt nulla obcaecati molestiae, atque alias dolor nesciunt praesentium maiores illo.</p>
+                            <div class="container text-center">
+                                <a href="" class="btn btn-primary">Appointment now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="card w-75">
-                        <div class="card-body">Test</div>
-                        <div class="card-body">Test</div>
-                        <div class="card-body">Test</div>
-                        <div class="card-body">Test</div>
-                        <div class="card-body">Test</div>
-                        <div class="card-body">Test</div>
+                        <div class="text-center pt-4">
+                            <h5>Physical Consultation</h5>
+                        </div>
+                        <div class="card-body text-justify">
+                            <hr>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia voluptate fuga laborum quis ipsa, voluptatum quae, aut sed sunt nulla obcaecati molestiae, atque alias dolor nesciunt praesentium maiores illo.</p>
+                            <div class="container text-center">
+                                <a href="" class="btn btn-primary">Appointment now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer">
-            Test
-        </div>
-        {{-- <div class="patient-content">
-            <div class="patient-left-divide">
-                <div id="carousel">
-                    <div class="carousel-item" data-id="1" style='display:block'><img src="{{ asset('images/doctor1.jfif') }}" alt=""></div>
-                    <div class="carousel-item" data-id="2"><img src="{{ asset('images/doctor2.jfif') }}" alt=""></div>
-                    <div class="carousel-item" data-id="3"><img src="{{ asset('images/doctor3.jfif') }}" alt=""></div>
-                    <div class="carousel-item" data-id="4"><img src="{{ asset('images/doctor4.avif') }}" alt=""></div>
-                </div>
-            </div>
-            <div class="patient-right-divide">
-                <div class="container text-center">
-                    <div class="text-left">
-                        <h2 class="card-text">Start your appointment now!</h2>
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium officiis numquam nulla nihil, quaerat id fugit ducimus reiciendis aut at dolore, quia ad nobis! Iure delectus praesentium commodi tempore eum!</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium officiis numquam nulla nihil, quaerat id fugit ducimus reiciendis aut at dolore, quia ad nobis! Iure delectus praesentium commodi tempore eum!</li>
+                        </ul>
                     </div>
-                    <a href="{{ route('patient-calendar') }}" class="btn btn-primary mt-5 px-4 p">Appointment</a>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium officiis numquam nulla nihil, quaerat id fugit ducimus reiciendis aut at dolore, quia ad nobis! Iure delectus praesentium commodi tempore eum!</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium officiis numquam nulla nihil, quaerat id fugit ducimus reiciendis aut at dolore, quia ad nobis! Iure delectus praesentium commodi tempore eum!</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
 </section>
 @endsection
 @push('scripts')

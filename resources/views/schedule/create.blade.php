@@ -206,6 +206,7 @@
                                                     <option value="{{$reason}}" selected>{{$reason}}</option>
                                                 @else
                                                     <option value="{{$reason}}">{{$reason}}</option>
+                                                @endif
                                     @endforeach
                                 </select>
                                 @error('reason')

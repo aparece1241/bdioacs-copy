@@ -13,21 +13,21 @@
 
 app('router')->setCompiledRoutes(
     array (
-  'compiled' => 
+  'compiled' =>
   array (
     0 => false,
-    1 => 
+    1 =>
     array (
-      '/sanctum/csrf-cookie' => 
+      '/sanctum/csrf-cookie' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'generated::jNgOOnVnc32FzgwT',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -38,16 +38,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/api/user' => 
+      '/api/user' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'generated::5RIpKiqCarQ1uQDO',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -58,16 +58,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/' => 
+      '/' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patient-landing',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -78,16 +78,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/calendar' => 
+      '/calendar' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patient-calendar',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -98,16 +98,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/login' => 
+      '/login' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'landing',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -117,14 +117,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'login',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -134,16 +134,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/dashboard' => 
+      '/dashboard' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'dashboard',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -154,16 +154,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/patients' => 
+      '/patients' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patients.index',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -173,14 +173,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patients.store',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -190,16 +190,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/patients/create' => 
+      '/patients/create' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patients.create',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -210,16 +210,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/doctors' => 
+      '/doctors' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.index',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -229,14 +229,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.store',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -246,16 +246,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/doctors/create' => 
+      '/doctors/create' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.create',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -266,16 +266,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/secretaries' => 
+      '/secretaries' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'secretaries.index',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -285,14 +285,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'secretaries.store',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -302,16 +302,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/secretaries/create' => 
+      '/secretaries/create' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'secretaries.create',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -322,16 +322,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/schedules' => 
+      '/schedules' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.index',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -341,14 +341,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.store',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -358,16 +358,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/schedules/create' => 
+      '/schedules/create' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.create',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -378,16 +378,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/services' => 
+      '/services' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'services.index',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -397,14 +397,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'services.store',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -414,16 +414,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/services/create' => 
+      '/services/create' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'services.create',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -434,16 +434,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/diseases' => 
+      '/diseases' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'diseases.index',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -453,14 +453,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'diseases.store',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -470,16 +470,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/diseases/create' => 
+      '/diseases/create' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'diseases.create',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -490,16 +490,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/email/verify' => 
+      '/email/verify' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'verification.notice',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -510,16 +510,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/email/verification-notification' => 
+      '/email/verification-notification' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'verification.resend',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -529,16 +529,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/logout' => 
+      '/logout' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'logout',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -548,16 +548,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/register' => 
+      '/register' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'register',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -567,14 +567,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'generated::OBf6O3Tak1iJA9vi',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -584,16 +584,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/password/reset' => 
+      '/password/reset' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'password.request',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -603,14 +603,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'password.update',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -620,16 +620,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/password/email' => 
+      '/password/email' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'password.email',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -639,16 +639,16 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/password/confirm' => 
+      '/password/confirm' =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'password.confirm',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -658,14 +658,14 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'generated::sCX7lGoLsOpEBHg0',
           ),
           1 => NULL,
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -676,25 +676,25 @@ app('router')->setCompiledRoutes(
         ),
       ),
     ),
-    2 => 
+    2 =>
     array (
       0 => '{^(?|/api/doctors/([^/]++)/upload/prescription(*:48)|/users/([^/]++)(?|(*:73)|/p(?|assword(*:92)|rofile(*:105)))|/pa(?|tient(?|s/([^/]++)(?|(*:142)|/(?|edit(*:158)|schedules(*:175))|(*:184))|/approval/([^/]++)(*:211))|ssword/reset/([^/]++)(*:241))|/d(?|octors/([^/]++)(?|(*:273)|/(?|edit(*:289)|schedules(?|(*:309)|/([^/]++)/meetings(*:335))|prescription(*:356)|feedback(?|(*:375)|/create(*:390)|(*:398))|diseases(?|/create(*:425)|(*:433))|meetings(*:450))|(*:459))|iseases/([^/]++)(?|(*:487)|/edit(*:500)|(*:508)))|/s(?|e(?|cretar(?|ies/([^/]++)(?|(*:551)|/edit(*:564)|(*:572))|y/([^/]++)/doctor\\-schedule(?|(*:611)))|rvices/([^/]++)(?|(*:639)|/edit(*:652)|(*:660)))|chedules/([^/]++)(?|(*:690)|/(?|edit(*:706)|a(?|ccept(*:723)|pprove(*:737))|decline(*:753)|prescription(*:773))|(*:782)))|/feedback/([^/]++)(?|(*:813)|/edit(*:826)|(*:834))|/meetings/([^/]++)(*:861)|/email/verify/([^/]++)/([^/]++)(*:900))/?$}sDu',
     ),
-    3 => 
+    3 =>
     array (
-      48 => 
+      48 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.schedule.upload',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -704,19 +704,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      73 => 
+      73 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'users.update',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'user',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
           ),
@@ -726,19 +726,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      92 => 
+      92 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'users.update-password',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'user',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
           ),
@@ -748,19 +748,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      105 => 
+      105 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'users.profile',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'user',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -771,19 +771,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      142 => 
+      142 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patients.show',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'patient',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -794,19 +794,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      158 => 
+      158 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patients.edit',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'patient',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -817,19 +817,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      175 => 
+      175 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patients.schedules.index',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'patient',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -840,19 +840,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      184 => 
+      184 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patients.update',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'patient',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
             'PATCH' => 1,
@@ -862,17 +862,17 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patients.destroy',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'patient',
           ),
-          2 => 
+          2 =>
           array (
             'DELETE' => 0,
           ),
@@ -882,19 +882,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      211 => 
+      211 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patients.approval',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -905,19 +905,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      241 => 
+      241 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'password.reset',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'token',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -928,19 +928,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      273 => 
+      273 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.show',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -951,19 +951,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      289 => 
+      289 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.edit',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -974,19 +974,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      309 => 
+      309 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.schedules.create',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -996,17 +996,17 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.schedules.store',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -1016,20 +1016,20 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      335 => 
+      335 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'meetings.create',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
             1 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1040,19 +1040,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      356 => 
+      356 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.schedule.prescription',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1063,19 +1063,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      375 => 
+      375 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.feedback.index',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1086,19 +1086,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      390 => 
+      390 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.feedback.create',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1109,19 +1109,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      398 => 
+      398 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.feedback.store',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -1131,19 +1131,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      425 => 
+      425 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.diseases.create',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1154,19 +1154,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      433 => 
+      433 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.diseases.store',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -1176,19 +1176,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      450 => 
+      450 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'meetings.store',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -1198,19 +1198,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      459 => 
+      459 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.update',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
             'PATCH' => 1,
@@ -1220,17 +1220,17 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'doctors.destroy',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'doctor',
           ),
-          2 => 
+          2 =>
           array (
             'DELETE' => 0,
           ),
@@ -1240,19 +1240,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      487 => 
+      487 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'diseases.show',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'disease',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1263,19 +1263,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      500 => 
+      500 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'diseases.edit',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'disease',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1286,19 +1286,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      508 => 
+      508 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'diseases.update',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'disease',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
             'PATCH' => 1,
@@ -1308,17 +1308,17 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'diseases.destroy',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'disease',
           ),
-          2 => 
+          2 =>
           array (
             'DELETE' => 0,
           ),
@@ -1328,19 +1328,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      551 => 
+      551 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'secretaries.show',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'secretary',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1351,19 +1351,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      564 => 
+      564 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'secretaries.edit',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'secretary',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1374,19 +1374,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      572 => 
+      572 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'secretaries.update',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'secretary',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
             'PATCH' => 1,
@@ -1396,17 +1396,17 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'secretaries.destroy',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'secretary',
           ),
-          2 => 
+          2 =>
           array (
             'DELETE' => 0,
           ),
@@ -1416,19 +1416,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      611 => 
+      611 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'secretaries.set-schedule',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'secretary',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1438,17 +1438,17 @@ app('router')->setCompiledRoutes(
           5 => false,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'secretaries.update-schedule',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'secretary',
           ),
-          2 => 
+          2 =>
           array (
             'POST' => 0,
           ),
@@ -1458,19 +1458,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      639 => 
+      639 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'services.show',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'service',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1481,19 +1481,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      652 => 
+      652 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'services.edit',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'service',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1504,19 +1504,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      660 => 
+      660 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'services.update',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'service',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
             'PATCH' => 1,
@@ -1526,17 +1526,17 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'services.destroy',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'service',
           ),
-          2 => 
+          2 =>
           array (
             'DELETE' => 0,
           ),
@@ -1546,19 +1546,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      690 => 
+      690 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.show',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1569,19 +1569,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      706 => 
+      706 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.edit',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1592,19 +1592,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      723 => 
+      723 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.accept',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
           ),
@@ -1614,19 +1614,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      737 => 
+      737 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.approve',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
           ),
@@ -1636,19 +1636,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      753 => 
+      753 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.decline',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
           ),
@@ -1658,19 +1658,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      773 => 
+      773 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'patient.prescription',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1681,19 +1681,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      782 => 
+      782 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.update',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
             'PATCH' => 1,
@@ -1703,17 +1703,17 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'schedules.destroy',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'schedule',
           ),
-          2 => 
+          2 =>
           array (
             'DELETE' => 0,
           ),
@@ -1723,19 +1723,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      813 => 
+      813 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'feedback.show',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'feedback',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1746,19 +1746,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      826 => 
+      826 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'feedback.edit',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'feedback',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1769,19 +1769,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      834 => 
+      834 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'feedback.update',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'feedback',
           ),
-          2 => 
+          2 =>
           array (
             'PUT' => 0,
             'PATCH' => 1,
@@ -1791,17 +1791,17 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'feedback.destroy',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'feedback',
           ),
-          2 => 
+          2 =>
           array (
             'DELETE' => 0,
           ),
@@ -1811,19 +1811,19 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      861 => 
+      861 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'meetings.show',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'meeting',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1834,20 +1834,20 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      900 => 
+      900 =>
       array (
-        0 => 
+        0 =>
         array (
-          0 => 
+          0 =>
           array (
             '_route' => 'verification.verify',
           ),
-          1 => 
+          1 =>
           array (
             0 => 'id',
             1 => 'hash',
           ),
-          2 => 
+          2 =>
           array (
             'GET' => 0,
             'HEAD' => 1,
@@ -1857,7 +1857,7 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
-        1 => 
+        1 =>
         array (
           0 => NULL,
           1 => NULL,
@@ -1871,56 +1871,56 @@ app('router')->setCompiledRoutes(
     ),
     4 => NULL,
   ),
-  'attributes' => 
+  'attributes' =>
   array (
-    'generated::jNgOOnVnc32FzgwT' => 
+    'generated::jNgOOnVnc32FzgwT' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'sanctum/csrf-cookie',
-      'action' => 
+      'action' =>
       array (
         'uses' => 'Laravel\\Sanctum\\Http\\Controllers\\CsrfCookieController@show',
         'controller' => 'Laravel\\Sanctum\\Http\\Controllers\\CsrfCookieController@show',
         'namespace' => NULL,
         'prefix' => 'sanctum',
-        'where' => 
+        'where' =>
         array (
         ),
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
         'as' => 'generated::jNgOOnVnc32FzgwT',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::5RIpKiqCarQ1uQDO' => 
+    'generated::5RIpKiqCarQ1uQDO' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'api/user',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'api',
           1 => 'auth:sanctum',
@@ -1930,35 +1930,35 @@ app('router')->setCompiledRoutes(
 }";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000004690930c00000000500d709c";}";s:4:"hash";s:44:"ak6DHbgBC7BfheBR15hZGhBUbjCopSpOQNFzH6PPsyg=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'generated::5RIpKiqCarQ1uQDO',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.schedule.upload' => 
+    'doctors.schedule.upload' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'api/doctors/{schedule}/upload/prescription',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'api',
         ),
@@ -1966,36 +1966,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@uploadPrescription',
         'namespace' => NULL,
         'prefix' => 'api',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'doctors.schedule.upload',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patient-landing' => 
+    'patient-landing' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => '/',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -2003,36 +2003,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@index',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'patient-landing',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patient-calendar' => 
+    'patient-calendar' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'calendar',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -2040,36 +2040,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@calendar',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'patient-calendar',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'landing' => 
+    'landing' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'login',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -2077,35 +2077,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\LoginController@showLoginForm',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'landing',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'login' => 
+    'login' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'login',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -2113,36 +2113,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\LoginController@login',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'login',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'dashboard' => 
+    'dashboard' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'dashboard',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2152,35 +2152,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\AppController@index',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'dashboard',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'users.update' => 
+    'users.update' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
       ),
       'uri' => 'users/{user}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2190,35 +2190,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\UserController@update',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'users.update',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'users.update-password' => 
+    'users.update-password' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
       ),
       'uri' => 'users/{user}/password',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2228,36 +2228,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\UserController@updatePassword',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'users.update-password',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patients.index' => 
+    'patients.index' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'patients',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2268,35 +2268,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@index',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patients.create' => 
+    'patients.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'patients/create',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2307,34 +2307,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patients.store' => 
+    'patients.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'patients',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2345,35 +2345,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patients.show' => 
+    'patients.show' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'patients/{patient}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2384,35 +2384,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@show',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patients.edit' => 
+    'patients.edit' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'patients/{patient}/edit',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2423,35 +2423,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@edit',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patients.update' => 
+    'patients.update' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
         1 => 'PATCH',
       ),
       'uri' => 'patients/{patient}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2462,34 +2462,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@update',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patients.destroy' => 
+    'patients.destroy' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'DELETE',
       ),
       'uri' => 'patients/{patient}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2500,35 +2500,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@destroy',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patients.schedules.index' => 
+    'patients.schedules.index' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'patients/{patient}/schedules',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2538,36 +2538,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@patient',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'patients.schedules.index',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.index' => 
+    'doctors.index' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2578,35 +2578,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DoctorController@index',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.create' => 
+    'doctors.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors/create',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2617,34 +2617,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DoctorController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.store' => 
+    'doctors.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'doctors',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2655,35 +2655,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DoctorController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.show' => 
+    'doctors.show' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors/{doctor}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2694,35 +2694,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DoctorController@show',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.edit' => 
+    'doctors.edit' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors/{doctor}/edit',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2733,35 +2733,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DoctorController@edit',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.update' => 
+    'doctors.update' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
         1 => 'PATCH',
       ),
       'uri' => 'doctors/{doctor}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2772,34 +2772,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DoctorController@update',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.destroy' => 
+    'doctors.destroy' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'DELETE',
       ),
       'uri' => 'doctors/{doctor}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2810,35 +2810,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DoctorController@destroy',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'secretaries.index' => 
+    'secretaries.index' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'secretaries',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2849,35 +2849,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\SecretaryController@index',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'secretaries.create' => 
+    'secretaries.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'secretaries/create',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2888,34 +2888,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\SecretaryController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'secretaries.store' => 
+    'secretaries.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'secretaries',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2926,35 +2926,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\SecretaryController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'secretaries.show' => 
+    'secretaries.show' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'secretaries/{secretary}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -2965,35 +2965,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\SecretaryController@show',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'secretaries.edit' => 
+    'secretaries.edit' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'secretaries/{secretary}/edit',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3004,35 +3004,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\SecretaryController@edit',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'secretaries.update' => 
+    'secretaries.update' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
         1 => 'PATCH',
       ),
       'uri' => 'secretaries/{secretary}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3043,34 +3043,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\SecretaryController@update',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'secretaries.destroy' => 
+    'secretaries.destroy' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'DELETE',
       ),
       'uri' => 'secretaries/{secretary}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3081,35 +3081,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\SecretaryController@destroy',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'secretaries.set-schedule' => 
+    'secretaries.set-schedule' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'secretary/{secretary}/doctor-schedule',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3119,35 +3119,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\SecretaryController@setDoctorSchedule',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'secretaries.set-schedule',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'secretaries.update-schedule' => 
+    'secretaries.update-schedule' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'secretary/{secretary}/doctor-schedule',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3157,36 +3157,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\SecretaryController@updateDoctorSchedule',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'secretaries.update-schedule',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.index' => 
+    'schedules.index' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'schedules',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3197,35 +3197,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@index',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.create' => 
+    'schedules.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'schedules/create',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3236,34 +3236,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.store' => 
+    'schedules.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'schedules',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3274,35 +3274,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.show' => 
+    'schedules.show' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'schedules/{schedule}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3313,35 +3313,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@show',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.edit' => 
+    'schedules.edit' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'schedules/{schedule}/edit',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3352,35 +3352,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@edit',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.update' => 
+    'schedules.update' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
         1 => 'PATCH',
       ),
       'uri' => 'schedules/{schedule}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3391,34 +3391,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@update',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.destroy' => 
+    'schedules.destroy' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'DELETE',
       ),
       'uri' => 'schedules/{schedule}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3429,35 +3429,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@destroy',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'services.index' => 
+    'services.index' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'services',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3468,35 +3468,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ServiceController@index',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'services.create' => 
+    'services.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'services/create',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3507,34 +3507,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ServiceController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'services.store' => 
+    'services.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'services',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3545,35 +3545,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ServiceController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'services.show' => 
+    'services.show' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'services/{service}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3584,35 +3584,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ServiceController@show',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'services.edit' => 
+    'services.edit' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'services/{service}/edit',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3623,35 +3623,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ServiceController@edit',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'services.update' => 
+    'services.update' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
         1 => 'PATCH',
       ),
       'uri' => 'services/{service}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3662,34 +3662,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ServiceController@update',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'services.destroy' => 
+    'services.destroy' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'DELETE',
       ),
       'uri' => 'services/{service}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3700,35 +3700,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ServiceController@destroy',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.schedules.create' => 
+    'doctors.schedules.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors/{doctor}/schedules',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3738,35 +3738,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'doctors.schedules.create',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.schedules.store' => 
+    'doctors.schedules.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'doctors/{doctor}/schedules',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3776,36 +3776,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'doctors.schedules.store',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.schedule.prescription' => 
+    'doctors.schedule.prescription' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors/{schedule}/prescription',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3815,35 +3815,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@prescription',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'doctors.schedule.prescription',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.accept' => 
+    'schedules.accept' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
       ),
       'uri' => 'schedules/{schedule}/accept',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3853,35 +3853,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@accept',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'schedules.accept',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.decline' => 
+    'schedules.decline' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
       ),
       'uri' => 'schedules/{schedule}/decline',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3891,35 +3891,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@decline',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'schedules.decline',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'schedules.approve' => 
+    'schedules.approve' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
       ),
       'uri' => 'schedules/{schedule}/approve',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3929,36 +3929,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@approve',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'schedules.approve',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patients.approval' => 
+    'patients.approval' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'patient/approval/{schedule}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -3968,36 +3968,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\ScheduleController@approvePatient',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'patients.approval',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'patient.prescription' => 
+    'patient.prescription' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'schedules/{schedule}/prescription',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4007,36 +4007,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\PatientController@prescription',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'patient.prescription',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.feedback.index' => 
+    'doctors.feedback.index' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors/{doctor}/feedback',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4047,35 +4047,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\FeedbackController@index',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.feedback.create' => 
+    'doctors.feedback.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors/{doctor}/feedback/create',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4086,34 +4086,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\FeedbackController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.feedback.store' => 
+    'doctors.feedback.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'doctors/{doctor}/feedback',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4124,35 +4124,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\FeedbackController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'feedback.show' => 
+    'feedback.show' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'feedback/{feedback}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4163,35 +4163,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\FeedbackController@show',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'feedback.edit' => 
+    'feedback.edit' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'feedback/{feedback}/edit',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4202,35 +4202,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\FeedbackController@edit',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'feedback.update' => 
+    'feedback.update' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
         1 => 'PATCH',
       ),
       'uri' => 'feedback/{feedback}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4241,34 +4241,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\FeedbackController@update',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'feedback.destroy' => 
+    'feedback.destroy' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'DELETE',
       ),
       'uri' => 'feedback/{feedback}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4279,35 +4279,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\FeedbackController@destroy',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'users.profile' => 
+    'users.profile' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'users/{user}/profile',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4317,36 +4317,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\UserController@profile',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'users.profile',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'diseases.index' => 
+    'diseases.index' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'diseases',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4357,35 +4357,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DiseaseController@index',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'diseases.create' => 
+    'diseases.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'diseases/create',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4396,34 +4396,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DiseaseController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'diseases.store' => 
+    'diseases.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'diseases',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4434,35 +4434,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DiseaseController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'diseases.show' => 
+    'diseases.show' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'diseases/{disease}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4473,35 +4473,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DiseaseController@show',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'diseases.edit' => 
+    'diseases.edit' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'diseases/{disease}/edit',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4512,35 +4512,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DiseaseController@edit',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'diseases.update' => 
+    'diseases.update' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'PUT',
         1 => 'PATCH',
       ),
       'uri' => 'diseases/{disease}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4551,34 +4551,34 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DiseaseController@update',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'diseases.destroy' => 
+    'diseases.destroy' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'DELETE',
       ),
       'uri' => 'diseases/{disease}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4589,35 +4589,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DiseaseController@destroy',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.diseases.create' => 
+    'doctors.diseases.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors/{doctor}/diseases/create',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4627,35 +4627,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DiseaseController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'doctors.diseases.create',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'doctors.diseases.store' => 
+    'doctors.diseases.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'doctors/{doctor}/diseases',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4665,36 +4665,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\DiseaseController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'doctors.diseases.store',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'meetings.create' => 
+    'meetings.create' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'doctors/{doctor}/schedules/{schedule}/meetings',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4704,35 +4704,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\MeetingController@create',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'meetings.create',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'meetings.store' => 
+    'meetings.store' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'doctors/{doctor}/meetings',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4742,36 +4742,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\MeetingController@store',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'meetings.store',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'meetings.show' => 
+    'meetings.show' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'meetings/{meeting}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
           1 => 'auth',
@@ -4781,36 +4781,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\MeetingController@show',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'meetings.show',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'verification.verify' => 
+    'verification.verify' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'email/verify/{id}/{hash}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -4818,36 +4818,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\VerificationController@verify',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'verification.verify',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'verification.notice' => 
+    'verification.notice' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'email/verify',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -4855,35 +4855,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\VerificationController@show',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'verification.notice',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'verification.resend' => 
+    'verification.resend' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'email/verification-notification',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -4891,35 +4891,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\VerificationController@resend',
         'namespace' => NULL,
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'verification.resend',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'logout' => 
+    'logout' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'logout',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -4927,36 +4927,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\LoginController@logout',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'logout',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'register' => 
+    'register' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'register',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -4964,35 +4964,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\RegisterController@showRegistrationForm',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'register',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::OBf6O3Tak1iJA9vi' => 
+    'generated::OBf6O3Tak1iJA9vi' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'register',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -5000,36 +5000,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\RegisterController@register',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'generated::OBf6O3Tak1iJA9vi',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'password.request' => 
+    'password.request' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'password/reset',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -5037,35 +5037,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\ForgotPasswordController@showLinkRequestForm',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'password.request',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'password.email' => 
+    'password.email' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'password/email',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -5073,36 +5073,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\ForgotPasswordController@sendResetLinkEmail',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'password.email',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'password.reset' => 
+    'password.reset' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'password/reset/{token}',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -5110,35 +5110,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\ResetPasswordController@showResetForm',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'password.reset',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'password.update' => 
+    'password.update' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'password/reset',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -5146,36 +5146,36 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\ResetPasswordController@reset',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'password.update',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'password.confirm' => 
+    'password.confirm' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
       'uri' => 'password/confirm',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -5183,35 +5183,35 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\ConfirmPasswordController@showConfirmForm',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'password.confirm',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::sCX7lGoLsOpEBHg0' => 
+    'generated::sCX7lGoLsOpEBHg0' =>
     array (
-      'methods' => 
+      'methods' =>
       array (
         0 => 'POST',
       ),
       'uri' => 'password/confirm',
-      'action' => 
+      'action' =>
       array (
-        'middleware' => 
+        'middleware' =>
         array (
           0 => 'web',
         ),
@@ -5219,19 +5219,19 @@ app('router')->setCompiledRoutes(
         'controller' => 'App\\Http\\Controllers\\Auth\\ConfirmPasswordController@confirm',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
-        'where' => 
+        'where' =>
         array (
         ),
         'as' => 'generated::sCX7lGoLsOpEBHg0',
       ),
       'fallback' => false,
-      'defaults' => 
+      'defaults' =>
       array (
       ),
-      'wheres' => 
+      'wheres' =>
       array (
       ),
-      'bindingFields' => 
+      'bindingFields' =>
       array (
       ),
       'lockSeconds' => NULL,
