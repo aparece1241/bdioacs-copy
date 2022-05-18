@@ -25,10 +25,10 @@ class UserController extends Controller
         $schedules = [];
 
         switch ($user->type) {
-            // case User::PATIENT:
-            //     $schedules = ($user->patient) ? $user->patient->schedules : collect([]);
-            //     $meetings = ($user->patient) ? $user->patient->meetings : collect([]);
-            //     break;
+            case User::PATIENT:
+                $schedules = ($user->patient) ? $user->patient->schedules : collect([]);
+                $meetings = ($user->patient) ? $user->patient->meetings : collect([]);
+                break;
             case User::DOCTOR:
                 $schedules = ($user->doctor) ? $user->doctor->schedules : collect([]);
                 $meetings = ($user->doctor) ? $user->doctor->meetings : collect([]);

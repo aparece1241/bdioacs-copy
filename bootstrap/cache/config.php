@@ -1,7 +1,7 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'Laravel',
+    'name' => 'BDIOACS',
     'env' => 'local',
     'debug' => true,
     'url' => 'http://localhost',
@@ -10,7 +10,7 @@
     'locale' => 'en',
     'fallback_locale' => 'en',
     'faker_locale' => 'en_US',
-    'key' => 'base64:jUkrdu9xT5TqsmngLg/70VuYB3wRUogL+Kn/rW6VSEI=',
+    'key' => 'base64:HsstF8djwPuGYTt5hxof7RlE6xdlb+A72uqUAKEhyH0=',
     'cipher' => 'AES-256-CBC',
     'providers' => 
     array (
@@ -185,7 +185,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\storage\\framework/cache/data',
+        'path' => 'C:\\Users\\johns\\Documents\\htdocs\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -229,7 +229,7 @@
         'driver' => 'octane',
       ),
     ),
-    'prefix' => 'laravel_cache',
+    'prefix' => 'bdioacs_cache',
   ),
   'cors' => 
   array (
@@ -328,7 +328,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'laravel_database_',
+        'prefix' => 'bdioacs_database_',
       ),
       'default' => 
       array (
@@ -356,12 +356,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\storage\\app',
+        'root' => 'C:\\Users\\johns\\Documents\\htdocs\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\storage\\app/public',
+        'root' => 'C:\\Users\\johns\\Documents\\htdocs\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -379,7 +379,7 @@
     ),
     'links' => 
     array (
-      'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\public\\storage' => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\storage\\app/public',
+      'C:\\Users\\johns\\Documents\\htdocs\\public\\storage' => 'C:\\Users\\johns\\Documents\\htdocs\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -417,13 +417,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\johns\\Documents\\htdocs\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\johns\\Documents\\htdocs\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -474,7 +474,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\storage\\logs/laravel.log',
+        'path' => 'C:\\Users\\johns\\Documents\\htdocs\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -486,11 +486,11 @@
       'smtp' => 
       array (
         'transport' => 'smtp',
-        'host' => 'mailhog',
-        'port' => '1025',
-        'encryption' => NULL,
-        'username' => NULL,
-        'password' => NULL,
+        'host' => 'smtp.sendgrid.net',
+        'port' => '587',
+        'encryption' => 'tls',
+        'username' => 'apikey',
+        'password' => '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',
         'timeout' => NULL,
         'auth_mode' => NULL,
       ),
@@ -532,15 +532,15 @@
     ),
     'from' => 
     array (
-      'address' => NULL,
-      'name' => 'Laravel',
+      'address' => 'danrish.it.solution@gmail.com',
+      'name' => 'BDIOACS',
     ),
     'markdown' => 
     array (
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\resources\\views/vendor/mail',
+        0 => 'C:\\Users\\johns\\Documents\\htdocs\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -697,7 +697,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\storage\\framework/sessions',
+    'files' => 'C:\\Users\\johns\\Documents\\htdocs\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -706,7 +706,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'laravel_session',
+    'cookie' => 'bdioacs_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -717,9 +717,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\resources\\views',
+      0 => 'C:\\Users\\johns\\Documents\\htdocs\\resources\\views',
     ),
-    'compiled' => 'C:\\Users\\ChronoDevs\\Desktop\\projects\\bdioacs1\\storage\\framework\\views',
+    'compiled' => 'C:\\Users\\johns\\Documents\\htdocs\\storage\\framework\\views',
   ),
   'flare' => 
   array (

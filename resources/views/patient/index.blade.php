@@ -15,11 +15,14 @@
                 </div>
             </aside>
         </div>
-        <div id="carousel">
+        {{-- <div id="carousel-w">
             <div class="carousel-item" data-id="1" style='display:block'><img src="{{ asset('images/doctor1.jfif') }}" alt=""></div>
             <div class="carousel-item" data-id="2"><img src="{{ asset('images/doctor2.jfif') }}" alt=""></div>
             <div class="carousel-item" data-id="3"><img src="{{ asset('images/doctor3.jfif') }}" alt=""></div>
             <div class="carousel-item" data-id="4"><img src="{{ asset('images/doctor4.avif') }}" alt=""></div>
+        </div> --}}
+        <div id="background">
+            <img src="{{ asset('images/bg-1.jpeg') }}" alt="background image">
         </div>
         <div class="row" id="patient-info-choice">
             <div class="col-md-6 patient-landing-info d-flex align-items-center justify-content-center">
@@ -27,6 +30,12 @@
                     <h2 style="font-size: 2.5em">Balais Bdioacs Infirmary Online Appointment and Consultation</h2>
                     <h5 style="font-weight: 100; ">Trusted to give medical advices</h5>
                     <h5 style="font-weight: 100;">Advance medical technologies</h5>
+                    <div id="carousel">
+                        <div class="carousel-item" data-id="1" style='display:block'><img src="{{ asset('images/doctor1.jfif') }}" alt=""></div>
+                        <div class="carousel-item" data-id="2"><img src="{{ asset('images/doctor2.jfif') }}" alt=""></div>
+                        <div class="carousel-item" data-id="3"><img src="{{ asset('images/doctor3.jfif') }}" alt=""></div>
+                        <div class="carousel-item" data-id="4"><img src="{{ asset('images/doctor4.avif') }}" alt=""></div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 patient-landing-info d-flex align-items-center justify-content-center">
