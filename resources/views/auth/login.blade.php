@@ -71,10 +71,10 @@
                         </form>
                     </div>
                     <div
-                        class="card-footer d-flex justify-content-end align-items-baseline px-0 bg-transparent pt-4">
-                        <a href="{{ route('register') }}" class="btn btn-sm rounded btn-primary m-0 d-none">Create
+                        class="card-footer px-0 bg-transparent pt-4">
+                        <a href="{{ route('register') }}" class="btn btn-sm rounded btn-primary m-0">Create
                             Account</a>
-                        <a href="{{ route('password.request') }}">Forgot Password</a>
+                        <a class="float-right" href="{{ route('password.request') }}">Forgot Password</a>
                     </div>
                 </div>
             </div>
