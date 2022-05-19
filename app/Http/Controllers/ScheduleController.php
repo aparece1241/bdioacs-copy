@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ScheduleRequest;
-use App\Notifications\AcceptScheduleNotification;
+use Carbon\Carbon;
 use App\Models\Doctor;
 use App\Models\Patient;
 use App\Models\Schedule;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 use App\Services\UserService;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\ScheduleRequest;
+use App\Notifications\AcceptScheduleNotification;
 
 class ScheduleController extends Controller
 {
@@ -76,7 +77,9 @@ class ScheduleController extends Controller
     public function create(Doctor $doctor)
     {
         $is_physical = request()->all()['is-physical'];
-        return view('schedule.create', compact('doctor', 'is_physical'));
+        $schedules = Schedule::whereMonth('schedule_date', Carbon::now()->format('m'))->get();
+        $schedules = $schedules->groupBy('date');
+        return view('patient.calendar', compact('schedules', 'doctor', 'is_physical'));
     }
 
     /**

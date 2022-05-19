@@ -36,7 +36,7 @@
     <div class="loader"></div>
     <div id="app">
         <div class="main-wrapper main-wrapper-1">
-            @if(request()->route()->getName() != 'patient-landing' && request()->route()->getName() != 'patient-calendar')
+            @if(request()->route()->getName() != 'patient-landing')
             @include('component.navbar')
                 <main class="main-content">
                     <section class="section">

@@ -29,9 +29,9 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', [PatientController::class, 'index'])->name('patient-landing');
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('landing');
 Route::post('login', [LoginController::class, 'login'])->name('login');
-Route::post('/schedules/create/v2', [ScheduleController::class, 'storev2'])->name('create-schedule');
 
 Route::middleware(['auth', 'verified'])->group(function () {
+    Route::post('/schedules/create/v2', [ScheduleController::class, 'storev2'])->name('create-schedule');
     Route::get('/calendar', [PatientController::class, 'calendar'])->name('patient-calendar');
     Route::get('dashboard', [AppController::class, 'index'])->name('dashboard');
     Route::put('users/{user}', [UserController::class, 'update'])->name('users.update');

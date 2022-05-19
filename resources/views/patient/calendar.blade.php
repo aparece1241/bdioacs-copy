@@ -2,13 +2,15 @@
     <script>window.location = "/";</script>
 @endif
 @extends('layouts.app')
-@push('css')
-    <link rel="stylesheet" href="{{ asset('css/patient.css') }}">
-@endpush
+
+@section('breadcrums')
+    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+@endsection
+
 @section('content')
 {{-- @dd(session()->all()) --}}
 <div id="app">
-    <div class="patient-navbar">
+    {{-- <div class="patient-navbar">
         <aside id="sidebar-wrapper">
             <div class="sidebar-brand">
                 <a href="/login" class="float-right btn btn-primary mr-5">Login</a>
@@ -17,9 +19,9 @@
                 </a>
             </div>
         </aside>
-    </div>
-    <div class="patient-subheader">
-        <h1>Please select your schedule</h1>
+    </div> --}}
+    <div class="patient-subheader text-center">
+        <h1 class="my-5">Please select your schedule</h1>
     </div>
     {{-- @dd($errors->all()) --}}
     <div class="container">
@@ -35,7 +37,7 @@
                 <div class="container">
                     <div class="card px-5 pb-3">
                         <div class="card-body px-0 pt-4">
-                            <form method="POST" action="{{ route('create-schedule') }}">
+                            <form method="POST" action="{{ route('schedules.store') }}">
                                 @csrf
                                 {{-- <input type="hidden" name="patient_id" value="{{ Auth::user()->patient->id }}"> --}}
                                 <div class="form-group">

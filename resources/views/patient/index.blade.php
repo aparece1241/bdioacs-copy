@@ -15,12 +15,6 @@
                 </div>
             </aside>
         </div>
-        {{-- <div id="carousel-w">
-            <div class="carousel-item" data-id="1" style='display:block'><img src="{{ asset('images/doctor1.jfif') }}" alt=""></div>
-            <div class="carousel-item" data-id="2"><img src="{{ asset('images/doctor2.jfif') }}" alt=""></div>
-            <div class="carousel-item" data-id="3"><img src="{{ asset('images/doctor3.jfif') }}" alt=""></div>
-            <div class="carousel-item" data-id="4"><img src="{{ asset('images/doctor4.avif') }}" alt=""></div>
-        </div> --}}
         <div id="background">
             <img src="{{ asset('images/bg-1.jpeg') }}" alt="background image">
         </div>
@@ -63,7 +57,7 @@
                         </div>
                         <div class="card-body text-justify">
                             <hr>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia voluptate fuga laborum quis ipsa, voluptatum quae, aut sed sunt nulla obcaecati molestiae, atque alias dolor nesciunt praesentium maiores illo.</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Online consultation in Balais Doctors Infirmary is a way where patients and doctors can interact through a video meeting and talks about the patient concern and the doctors findings and opinions online.</p>
                             <div class="container text-center">
                                 <a href="" class="btn btn-primary">Appointment now</a>
                             </div>
@@ -77,7 +71,7 @@
                         </div>
                         <div class="card-body text-justify">
                             <hr>
-                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos mollitia voluptate fuga laborum quis ipsa, voluptatum quae, aut sed sunt nulla obcaecati molestiae, atque alias dolor nesciunt praesentium maiores illo.</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Physical Consultation in Balais Doctors Infirmary is a consultation wherein patients just need to get an appointment in their desired date and personally go to the infirmary, physically have a one on one talk and consultation with the doctor.</p>
                             <div class="container text-center">
                                 <a href="" class="btn btn-primary">Appointment now</a>
                             </div>
